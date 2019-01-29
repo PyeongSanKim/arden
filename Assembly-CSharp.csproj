@@ -63,6 +63,7 @@
     <Compile Include="Assets\3.Scripts\FadeController.cs" />
     <Compile Include="Assets\3.Scripts\MgrLogo.cs" />
     <Compile Include="Assets\3.Scripts\NextScene.cs" />
+    <Compile Include="Assets\3.Scripts\ObjectBlinkText.cs" />
     <Compile Include="Assets\3.Scripts\RiseUI.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/basso/Documents/arden/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

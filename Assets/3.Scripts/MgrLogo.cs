@@ -8,6 +8,14 @@ public class MgrLogo : MonoBehaviour
     public GameObject startBtn;
     public GameObject background;
     public GameObject Fade;
+    [Header("Background")]
+    public int backRiseNum = 100;
+    public float backRriseTime = 5f;
+
+    [Header("Logo")]
+    public int logoRiseNum = 70;
+    public float logoRiseTime = 1f;
+
     void Start()
     {
         StartCoroutine(CoLogo());
@@ -23,12 +31,12 @@ public class MgrLogo : MonoBehaviour
     IEnumerator CoLogo()
     {
         yield return new WaitForSeconds(1f);
-        background.GetComponent<RiseUI>().Rise(100, 5f);
+        background.GetComponent<RiseUI>().Rise(backRiseNum, backRriseTime);
 
         yield return new WaitForSeconds(4.2f);
         logo.GetComponent<FadeController>().FadeIn(2f, false);
-        logo.GetComponent<RiseUI>().Rise(70, 1f);
-        yield return new WaitForSeconds(1.5f);
+        logo.GetComponent<RiseUI>().Rise(logoRiseNum, logoRiseTime);
+        yield return new WaitForSeconds(2.5f);
         startBtn.SetActive(true);
     }
 
