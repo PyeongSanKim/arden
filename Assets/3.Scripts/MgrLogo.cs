@@ -19,6 +19,7 @@ public class MgrLogo : MonoBehaviour
     void Start()
     {
         StartCoroutine(CoLogo());
+        Screen.SetResolution(1080, 1920, true);
     }
 
     public void nextSceneBtn()
@@ -33,7 +34,7 @@ public class MgrLogo : MonoBehaviour
         yield return new WaitForSeconds(1f);
         background.GetComponent<RiseUI>().Rise(backRiseNum, backRriseTime);
 
-        yield return new WaitForSeconds(4.2f);
+        yield return new WaitForSeconds(3f);
         logo.GetComponent<FadeController>().FadeIn(2f, false);
         logo.GetComponent<RiseUI>().Rise(logoRiseNum, logoRiseTime);
         yield return new WaitForSeconds(2.5f);
