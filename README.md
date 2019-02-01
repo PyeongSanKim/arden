@@ -9,6 +9,9 @@
 > 
 > **refactor**: 코드 리팩토링
 > 
-> **ui**: ui 추가 및 변경 chore 기타 잡다한 일
-
+> **ui**: ui 추가 및 변경
+>
+> **chore**: 기타 잡다한 일
+>
+> **make** : 
 (+ issue number #)
