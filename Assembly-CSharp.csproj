@@ -60,13 +60,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\3.Scripts\Dialogue.cs" />
+    <Compile Include="Assets\3.Scripts\DialogueTxt.cs" />
     <Compile Include="Assets\3.Scripts\FadeController.cs" />
+    <Compile Include="Assets\3.Scripts\MgrDialogue.cs" />
     <Compile Include="Assets\3.Scripts\MgrLobby.cs" />
     <Compile Include="Assets\3.Scripts\MgrLogo.cs" />
     <Compile Include="Assets\3.Scripts\NextScene.cs" />
     <Compile Include="Assets\3.Scripts\ObjectBlinkText.cs" />
     <Compile Include="Assets\3.Scripts\ObjectSwipe.cs" />
     <Compile Include="Assets\3.Scripts\RiseUI.cs" />
+    <Compile Include="Assets\3.Scripts\Tutorial.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/basso/Documents/arden/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

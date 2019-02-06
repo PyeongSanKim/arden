@@ -8,6 +8,11 @@ public class MgrLobby : MonoBehaviour
     bool isPan_statusD = false;
     public GameObject Fade;
 
+
+    public GameObject MixturePan;
+    bool isMixture = false;
+
+
     void Start()
     {
         Fade.GetComponent<FadeController>().FadeOut(2f, false);
@@ -25,6 +30,20 @@ public class MgrLobby : MonoBehaviour
         {
             isPan_statusD = false;
             Pan_statusD.SetActive(false);
+        }
+    }
+
+    public void ClickMixtureBtn()
+    {
+        if(!isMixture)
+        {
+            MixturePan.SetActive(true);
+            isMixture = true;
+        }
+        else if(isMixture)
+        {
+            MixturePan.SetActive(false);
+            isMixture = false;
         }
     }
 }
