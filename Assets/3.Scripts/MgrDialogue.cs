@@ -5,12 +5,14 @@ using UnityEngine.UI;
 
 public class MgrDialogue : MonoBehaviour
 {
-
     public Text nameText;
     public Text dialogueText;
+    public Sprite nullSprite;
+    public Image IMG;
     public GameObject DialoguePan;
+    public LobbyDialougeSys LDS;
     private Queue<string> sentences;
-
+    private int DialogueIndex;
     void Awake()
     {
         sentences = new Queue<string>();
@@ -18,8 +20,10 @@ public class MgrDialogue : MonoBehaviour
 
     public void StartDialogue (Dialogue dialogue)
     {
+        DialogueIndex = dialogue.DialougeIndex;
         DialoguePan.SetActive(true);
     	nameText.text = dialogue.name;
+        IMG.sprite = dialogue.sprite;
     	sentences.Clear();
 
     	foreach (string sentence in dialogue.sentences)
@@ -54,6 +58,9 @@ public class MgrDialogue : MonoBehaviour
 
     void EndDialogue()
     {
+        IMG.sprite = nullSprite;
         DialoguePan.SetActive(false);
+        LDS.DiaNum = DialogueIndex;
+        LDS.NextDialogue();
     }
 }
