@@ -738,8 +738,8 @@ RectTransform:
   m_Father: {fileID: 402670050}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.24414062}
-  m_AnchorMax: {x: 1, y: 0.7558594}
+  m_AnchorMin: {x: 0, y: 0.5957031}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1933,13 +1933,24 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 309370280}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 312447327}
         m_MethodName: ClickItemBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1568131645}
+        m_MethodName: FirstItemBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2877,7 +2888,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -25.350006, y: 0}
+  m_AnchoredPosition: {x: -47, y: -156.25}
   m_SizeDelta: {x: -50.7, y: 312.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &524772285
@@ -4707,7 +4718,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 802611422}
   m_OnClick:
     m_PersistentCalls:
@@ -5910,13 +5921,24 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1066811774}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 312447327}
         m_MethodName: ClickQuestBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1568131645}
+        m_MethodName: FirstQuestBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6342,7 +6364,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1568131638}
+      - m_Target: {fileID: 1568131645}
         m_MethodName: SeriaDia
         m_Mode: 1
         m_Arguments:
@@ -8808,10 +8830,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1568131641}
   - component: {fileID: 1568131640}
-  - component: {fileID: 1568131638}
+  - component: {fileID: 1568131645}
   - component: {fileID: 1568131639}
   - component: {fileID: 1568131642}
   - component: {fileID: 1568131643}
+  - component: {fileID: 1568131638}
+  - component: {fileID: 1568131646}
+  - component: {fileID: 1568131644}
   m_Layer: 0
   m_Name: DialogueMgr
   m_TagString: Untagged
@@ -8828,13 +8853,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1568131637}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21623edef63fc014bab6a61172ec1fb8, type: 3}
+  m_Script: {fileID: 11500000, guid: d1d81c836f6398949ab13d5a1b632baf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DiaNum: 0
-  DT1: {fileID: 1568131639}
-  DT2: {fileID: 1568131642}
-  DT3: {fileID: 1568131643}
+  dia:
+    DialougeIndex: 3
+    name: 
+    sprite: {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    sentences:
+    - "\uC138\uB9AC\uC544\uC5D0\uAC8C \uBC1B\uC740 \uD018\uC2A4\uD2B8\uB97C \uD655\uC778\uD574
+      \uBD05\uC2DC\uB2E4."
 --- !u!114 &1568131639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8872,7 +8900,7 @@ MonoBehaviour:
   nullSprite: {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
   IMG: {fileID: 61081225}
   DialoguePan: {fileID: 2079325292}
-  LDS: {fileID: 1568131638}
+  LDS: {fileID: 1568131645}
 --- !u!4 &1568131641
 Transform:
   m_ObjectHideFlags: 0
@@ -8922,13 +8950,81 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dia:
-    DialougeIndex: 0
+    DialougeIndex: 2
     name: 
     sprite: {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
     sentences:
     - "\uC190\uB2D8\uC774 \uB5A0\uB0AC\uAD70\uC694"
     - "\uC758\uB8B0\uB294 \uD558\uB2E8 \uD018\uC2A4\uD2B8 \uC544\uC774\uCF58\uC744
       \uD1B5\uD574\uC11C \uC5B8\uC81C\uB4E0 \uD655\uC778\uD560 \uC218 \n\uC788\uC2B5\uB2C8\uB2E4."
+--- !u!114 &1568131644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568131637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1d81c836f6398949ab13d5a1b632baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dia:
+    DialougeIndex: 5
+    name: 
+    sprite: {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    sentences:
+    - "\uC774 \uACF3\uC740 \uC544\uB974\uB374\uC758 \uC9C0\uB3C4\uC785\uB2C8\uB2E4.\n\uC815\uB9D0
+      \uBA4B\uC9C0\uC9C0 \uC54A\uB098\uC694?"
+    - "\uB3C4\uC2DC\uB97C \uD074\uB9AD\uD558\uBA74, \uD574\uB2F9 \uB3C4\uC2DC\uB85C
+      \uC774\uB3D9\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+--- !u!114 &1568131645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568131637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4721a5c20d944504ba0fdbab8dcf248c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DiaNum: 0
+  DT0: {fileID: 1568131639}
+  DT1: {fileID: 1568131642}
+  DT2: {fileID: 1568131643}
+  DT3: {fileID: 1568131638}
+  DT4: {fileID: 1568131646}
+  DT5: {fileID: 1568131644}
+  Seria: {fileID: 1111481418}
+  QuestBtn: {fileID: 1066811773}
+  ItemBtn: {fileID: 309370279}
+  CollectBtn: {fileID: 1605276468}
+  MixBtn: {fileID: 802611421}
+--- !u!114 &1568131646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568131637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1d81c836f6398949ab13d5a1b632baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dia:
+    DialougeIndex: 4
+    name: 
+    sprite: {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    sentences:
+    - "\uC5B4\uB514\uBCF4\uC790..."
+    - "\uC778\uBCA4\uD1A0\uB9AC\uC5D0 [\uBE48\uBCD1]\uC774 \uC788\uAD70\uC694."
+    - "[\uCCB4\uB825\uD3EC\uC158]\uC744 \uB9CC\uB4E4\uAE30 \uC704\uD574\uC11C\uB294\n[\uBD89\uC740
+      \uAF43]\uACFC [\uBE48\uBCD1]\uC774 \uD544\uC694\uD569\uB2C8\uB2E4."
+    - "[\uBE48\uBCD1]\uC740 \uAC00\uC9C0\uACE0 \uC788\uC73C\uB2C8 [\uBD89\uC740 \uAF43]\uC744
+      \uCC3E\uC73C\uB7EC \uAC00 \uBD05\uC2DC\uB2E4."
 --- !u!1 &1577886426
 GameObject:
   m_ObjectHideFlags: 0
@@ -9007,8 +9103,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 158541454}
   m_HandleRect: {fileID: 158541453}
   m_Direction: 2
-  m_Value: 0.5
-  m_Size: 0.51171875
+  m_Value: 1
+  m_Size: 0.40429688
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9278,13 +9374,24 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1605276469}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 312447327}
         m_MethodName: ClickCollectionBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1568131645}
+        m_MethodName: FirstCollectBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

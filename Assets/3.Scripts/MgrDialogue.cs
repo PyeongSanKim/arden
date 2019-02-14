@@ -10,7 +10,7 @@ public class MgrDialogue : MonoBehaviour
     public Sprite nullSprite;
     public Image IMG;
     public GameObject DialoguePan;
-    public LobbyDialougeSys LDS;
+    public Tutorial LDS;
     private Queue<string> sentences;
     private int DialogueIndex;
     void Awake()
