@@ -60,9 +60,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\3.Scripts\DataInfo\GameData.cs" />
+    <Compile Include="Assets\3.Scripts\DataInfo\ItemInfo.cs" />
+    <Compile Include="Assets\3.Scripts\DataInfo\QuestInfo.cs" />
     <Compile Include="Assets\3.Scripts\Dialogue.cs" />
     <Compile Include="Assets\3.Scripts\DialogueTxt.cs" />
+    <Compile Include="Assets\3.Scripts\Drag.cs" />
     <Compile Include="Assets\3.Scripts\FadeController.cs" />
+    <Compile Include="Assets\3.Scripts\MgrButton.cs" />
     <Compile Include="Assets\3.Scripts\MgrDialogue.cs" />
     <Compile Include="Assets\3.Scripts\MgrLobby.cs" />
     <Compile Include="Assets\3.Scripts\MgrLogo.cs" />
