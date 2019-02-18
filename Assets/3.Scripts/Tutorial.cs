@@ -22,7 +22,7 @@ public class Tutorial : MonoBehaviour
 
     void Start()
     {
-        Invoke("Tute", 2f);
+        Invoke("Tute", 1.5f);
     }
     void Update()
     {
@@ -31,6 +31,13 @@ public class Tutorial : MonoBehaviour
     void Tute()
     {
         DT0.DialogueBtn();
+        QuestBtn.interactable = false;
+        ItemBtn.interactable = false;
+        CollectBtn.interactable = false;
+        MixBtn.interactable = false;
+        PlayerPrefs.SetInt("Quest1", 1);
+        if (MgrItem.II.Q.Count==0)
+            MgrItem.II.Q.Enqueue(0);
     }
 
     public void SeriaDia()

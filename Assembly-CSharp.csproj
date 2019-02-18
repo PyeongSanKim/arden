@@ -60,7 +60,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\3.Scripts\DataInfo\DataMgr.cs" />
     <Compile Include="Assets\3.Scripts\DataInfo\GameData.cs" />
+    <Compile Include="Assets\3.Scripts\DataInfo\IndexData.cs" />
     <Compile Include="Assets\3.Scripts\DataInfo\ItemInfo.cs" />
     <Compile Include="Assets\3.Scripts\DataInfo\QuestInfo.cs" />
     <Compile Include="Assets\3.Scripts\Dialogue.cs" />
@@ -69,11 +71,13 @@
     <Compile Include="Assets\3.Scripts\FadeController.cs" />
     <Compile Include="Assets\3.Scripts\MgrButton.cs" />
     <Compile Include="Assets\3.Scripts\MgrDialogue.cs" />
+    <Compile Include="Assets\3.Scripts\MgrItem.cs" />
     <Compile Include="Assets\3.Scripts\MgrLobby.cs" />
     <Compile Include="Assets\3.Scripts\MgrLogo.cs" />
     <Compile Include="Assets\3.Scripts\NextScene.cs" />
     <Compile Include="Assets\3.Scripts\ObjectBlinkText.cs" />
     <Compile Include="Assets\3.Scripts\ObjectSwipe.cs" />
+    <Compile Include="Assets\3.Scripts\QuestSetActive.cs" />
     <Compile Include="Assets\3.Scripts\RiseUI.cs" />
     <Compile Include="Assets\3.Scripts\Tutorial.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
