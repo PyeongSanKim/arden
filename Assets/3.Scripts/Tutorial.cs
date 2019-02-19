@@ -7,12 +7,16 @@ public class Tutorial : MonoBehaviour
 {
     public int DiaNum = 0;
 
-    public DialogueTxt DT0;
-    public DialogueTxt DT1;
-    public DialogueTxt DT2;
-    public DialogueTxt DT3;
-    public DialogueTxt DT4;
-    public DialogueTxt DT5;
+    [SerializeField] DialogueTxt DT0;
+    [SerializeField] DialogueTxt DT1;
+    [SerializeField] DialogueTxt DT2;
+    [SerializeField] DialogueTxt DT3;
+    [SerializeField] DialogueTxt DT4;
+    [SerializeField] DialogueTxt DT5;
+    [SerializeField] DialogueTxt DT6;
+    [SerializeField] DialogueTxt DT7;
+    [SerializeField] DialogueTxt DT8;
+    [SerializeField] DialogueTxt DT9;
 
     public GameObject Seria;
     public Button QuestBtn;
@@ -36,8 +40,10 @@ public class Tutorial : MonoBehaviour
         CollectBtn.interactable = false;
         MixBtn.interactable = false;
         PlayerPrefs.SetInt("Quest1", 1);
-        if (MgrItem.II.Q.Count==0)
+        if (MgrItem.II.Q.Count == 0)
+        {
             MgrItem.II.Q.Enqueue(0);
+        }
     }
 
     public void SeriaDia()
@@ -61,6 +67,26 @@ public class Tutorial : MonoBehaviour
         MixBtn.interactable = true;
         if (DiaNum.Equals(4))
             DT5.DialogueBtn();
+    }
+    public void FirstCityBtn()
+    {
+        if (DiaNum > 4)
+            DT6.DialogueBtn();
+    }
+    public void FirstStoreBtn()
+    {
+        if (DiaNum > 4)
+            DT7.DialogueBtn();
+    }
+    public void FirstMineBtn()
+    {
+        if (DiaNum > 4)
+            DT8.DialogueBtn();
+    }
+    public void FirstMiningBtn()
+    {
+        if (DiaNum > 4)
+            DT9.DialogueBtn();
     }
 
     public void NextDialogue()

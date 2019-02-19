@@ -13,9 +13,10 @@ public class MgrLobby : MonoBehaviour
     bool isCollection = false;
     bool isMixture = false;
     public GameObject QuestPan;
-    public GameObject ItemPan;
+    public GameObject ItemPanAll;
     public GameObject CollectionPan;
-    public GameObject MixturePan;
+    public GameObject ItemPan;
+    public GameObject MixPan;
 
     void Start()
     {
@@ -56,12 +57,14 @@ public class MgrLobby : MonoBehaviour
         if (!isItem)
         {
             AllBtnDown();
+            ItemPanAll.SetActive(true);
             ItemPan.SetActive(true);
+            MixPan.SetActive(false);
             isItem = true;
         }
         else if (isItem)
         {
-            ItemPan.SetActive(false);
+            ItemPanAll.SetActive(false);
             isItem = false;
         }
     }
@@ -84,12 +87,14 @@ public class MgrLobby : MonoBehaviour
         if (!isMixture)
         {
             AllBtnDown();
-            MixturePan.SetActive(true);
+            ItemPanAll.SetActive(true);
+            ItemPan.SetActive(false);
+            MixPan.SetActive(true);
             isMixture = true;
         }
         else if (isMixture)
         {
-            MixturePan.SetActive(false);
+            ItemPanAll.SetActive(false);
             isMixture = false;
         }
     }
@@ -97,9 +102,8 @@ public class MgrLobby : MonoBehaviour
     public void AllBtnDown()
     {
         QuestPan.SetActive(false);
-        ItemPan.SetActive(false);
+        ItemPanAll.SetActive(false);
         CollectionPan.SetActive(false);
-        MixturePan.SetActive(false);
         isQuest = false;
         isItem = false;
         isCollection = false;
