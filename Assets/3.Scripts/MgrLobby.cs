@@ -44,9 +44,6 @@ public class MgrLobby : MonoBehaviour
             AllBtnDown();
             QuestPan.SetActive(true);
             isQuest = true;
-            isItem = false;
-            isCollection = false;
-            isMixture = false;
         }
         else if(isQuest)
         {
@@ -60,10 +57,7 @@ public class MgrLobby : MonoBehaviour
         {
             AllBtnDown();
             ItemPan.SetActive(true);
-            isQuest = false;
             isItem = true;
-            isCollection = false;
-            isMixture = false;
         }
         else if (isItem)
         {
@@ -77,10 +71,7 @@ public class MgrLobby : MonoBehaviour
         {
             AllBtnDown();
             CollectionPan.SetActive(true);
-            isQuest = false;
-            isItem = false;
             isCollection = true;
-            isMixture = false;
         }
         else if (isCollection)
         {
@@ -94,9 +85,6 @@ public class MgrLobby : MonoBehaviour
         {
             AllBtnDown();
             MixturePan.SetActive(true);
-            isQuest = false;
-            isItem = false;
-            isCollection = false;
             isMixture = true;
         }
         else if (isMixture)
@@ -106,11 +94,15 @@ public class MgrLobby : MonoBehaviour
         }
     }
 
-    void AllBtnDown()
+    public void AllBtnDown()
     {
         QuestPan.SetActive(false);
         ItemPan.SetActive(false);
         CollectionPan.SetActive(false);
         MixturePan.SetActive(false);
+        isQuest = false;
+        isItem = false;
+        isCollection = false;
+        isMixture = false;
     }
 }

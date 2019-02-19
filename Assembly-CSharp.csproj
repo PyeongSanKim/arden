@@ -68,8 +68,10 @@
     <Compile Include="Assets\3.Scripts\Dialogue.cs" />
     <Compile Include="Assets\3.Scripts\DialogueTxt.cs" />
     <Compile Include="Assets\3.Scripts\Drag.cs" />
+    <Compile Include="Assets\3.Scripts\Drop.cs" />
     <Compile Include="Assets\3.Scripts\FadeController.cs" />
     <Compile Include="Assets\3.Scripts\MgrButton.cs" />
+    <Compile Include="Assets\3.Scripts\MgrCollection.cs" />
     <Compile Include="Assets\3.Scripts\MgrDialogue.cs" />
     <Compile Include="Assets\3.Scripts\MgrItem.cs" />
     <Compile Include="Assets\3.Scripts\MgrLobby.cs" />
