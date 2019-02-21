@@ -10,6 +10,8 @@ public class Dialogue
     public int DialougeIndex;
     public string name;
     public Sprite sprite;
+    public Sprite Itemsprite;
+
     [TextArea(3, 10)]
     public string[] sentences;
 }

@@ -17,6 +17,13 @@ public class Tutorial : MonoBehaviour
     [SerializeField] DialogueTxt DT7;
     [SerializeField] DialogueTxt DT8;
     [SerializeField] DialogueTxt DT9;
+    [SerializeField] DialogueTxt DT10;
+    [SerializeField] DialogueTxt DT11;
+    [SerializeField] DialogueTxt DT12;
+    [SerializeField] DialogueTxt DT13;
+    [SerializeField] DialogueTxt DT14;
+    [SerializeField] DialogueTxt DT15;
+    [SerializeField] DialogueTxt DT16;
 
     public GameObject Seria;
     public Button QuestBtn;
@@ -87,6 +94,41 @@ public class Tutorial : MonoBehaviour
     {
         if (DiaNum > 4)
             DT9.DialogueBtn();
+    }
+    public void FirstGrassBtn()
+    {
+        if (DiaNum > 4)
+            DT10.DialogueBtn();
+    }
+    public void FirstGrassGetBtn()
+    {
+        if (DiaNum > 4)
+            DT11.DialogueBtn();
+    }
+    public void FirstSlaimeBtn()
+    {
+        if (DiaNum > 4)
+            DT12.DialogueBtn();
+    }
+    public void FirstSandBtn()
+    {
+        if (DiaNum > 4)
+            DT13.DialogueBtn();
+    }
+    public void FirstSandGetBtn()
+    {
+        if (DiaNum > 4)
+            DT14.DialogueBtn();
+    }
+    public void FirstManaBtn()
+    {
+        if (DiaNum > 4)
+            DT15.DialogueBtn();
+    }
+    public void FirstManaGetBtn()
+    {
+        if (DiaNum > 4)
+            DT16.DialogueBtn();
     }
 
     public void NextDialogue()

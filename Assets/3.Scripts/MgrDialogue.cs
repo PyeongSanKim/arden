@@ -9,6 +9,7 @@ public class MgrDialogue : MonoBehaviour
     public Text dialogueText;
     public Sprite nullSprite;
     public Image IMG;
+    public Image ItemIMG;
     public GameObject DialoguePan;
     public Tutorial LDS;
     private Queue<string> sentences;
@@ -24,7 +25,8 @@ public class MgrDialogue : MonoBehaviour
         DialoguePan.SetActive(true);
     	nameText.text = dialogue.name;
         IMG.sprite = dialogue.sprite;
-    	sentences.Clear();
+        ItemIMG.sprite = dialogue.Itemsprite;
+        sentences.Clear();
 
     	foreach (string sentence in dialogue.sentences)
     	{
@@ -59,6 +61,7 @@ public class MgrDialogue : MonoBehaviour
     void EndDialogue()
     {
         IMG.sprite = nullSprite;
+        ItemIMG.sprite = nullSprite;
         DialoguePan.SetActive(false);
         LDS.DiaNum = DialogueIndex;
         LDS.NextDialogue();
