@@ -6,15 +6,17 @@ using UnityEngine.EventSystems;
 public class Drag : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
     private Transform itemTr;
-    public Transform inventoryTr;
+    private Transform inventoryTr;
 
-    public Transform itemListTr;
+    private Transform itemListTr;
     private CanvasGroup canvasGroup;
 
     public static GameObject dragingItem = null;
 
     void Start()
     {
+        inventoryTr = GameObject.Find("Pan_Item").transform;
+        itemListTr = GameObject.Find("ItemContents").transform;
         itemTr = GetComponent<Transform>();
         canvasGroup = GetComponent<CanvasGroup>();
     }
