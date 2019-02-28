@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\3.Scripts\curTime.cs" />
     <Compile Include="Assets\3.Scripts\DataInfo\DataMgr.cs" />
     <Compile Include="Assets\3.Scripts\DataInfo\GameData.cs" />
     <Compile Include="Assets\3.Scripts\DataInfo\IndexData.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Assets\3.Scripts\ItemManagement\Invetory.cs" />
     <Compile Include="Assets\3.Scripts\ItemManagement\Item.cs" />
     <Compile Include="Assets\3.Scripts\ItemManagement\ItemPickUp.cs" />
+    <Compile Include="Assets\3.Scripts\ItemManagement\MixBtn.cs" />
     <Compile Include="Assets\3.Scripts\MgrButton.cs" />
     <Compile Include="Assets\3.Scripts\MgrCollection.cs" />
     <Compile Include="Assets\3.Scripts\MgrDialogue.cs" />

@@ -5,10 +5,10 @@ using UnityEngine;
 public class Invetory : MonoBehaviour
 {
     public static Invetory instance;
-
+    public int inventorySize;
     private DatabaseMgr theDatabase;
     private InventorySlot[] slots; // 인벤토리 슬롯
-    private List<Item> invetoryItemList; // 플레이어가 소지한 아이템
+    public List<Item> invetoryItemList; // 플레이어가 소지한 아이템
 
     public Transform ItemContents; // 슬롯의 부모
 
@@ -19,8 +19,13 @@ public class Invetory : MonoBehaviour
         invetoryItemList = new List<Item>();
         slots = ItemContents.GetComponentsInChildren<InventorySlot>();
         invetoryItemList.Add(new Item(1021, "빈 병", "빔", Item.ItemType.Use));
+        invetoryItemList.Add(new Item(1001, "빈 병", "빔", Item.ItemType.Use));
+        invetoryItemList.Add(new Item(1001, "빈 병", "빔", Item.ItemType.Use));
+        invetoryItemList.Add(new Item(1001, "빈 병", "빔", Item.ItemType.Use));
+        invetoryItemList.Add(new Item(1002, "빈 병", "빔", Item.ItemType.Use));
+        invetoryItemList.Add(new Item(1003, "빈 병", "빔", Item.ItemType.Use));
 
-        for (int i = 0; i <16; i++)
+        for (int i = 0; i < inventorySize; i++)
         {
             slots[i].gameObject.SetActive(false);
         }
@@ -54,6 +59,24 @@ public class Invetory : MonoBehaviour
             }
         }
         Debug.LogError("데이터베이스에 해당 ID값을 가진 아이템이 존재하지 않습니다.");
+    }
+
+    public void RemoveItem(int _itemID)
+    {
+        for (int i = 0; i < theDatabase.itemList.Count; i++)
+        {
+            if (_itemID == theDatabase.itemList[i].itemID) 
+            {
+                for (int j = 0; j < invetoryItemList.Count; j++)
+                {
+                    if (invetoryItemList[j].itemID == _itemID) 
+                    {
+                        invetoryItemList[j].itemCount -= 1;
+                        return;
+                    }
+                }
+            }
+        }
     }
 
     void Update()
