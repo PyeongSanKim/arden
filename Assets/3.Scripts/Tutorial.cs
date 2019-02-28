@@ -47,10 +47,10 @@ public class Tutorial : MonoBehaviour
         CollectBtn.interactable = false;
         MixBtn.interactable = false;
         PlayerPrefs.SetInt("Quest1", 1);
-        if (MgrItem.II.Q.Count == 0)
-        {
-            MgrItem.II.Q.Enqueue(0);
-        }
+        //if (MgrItem.II.Q.Count == 0)
+        //{
+        //    MgrItem.II.Q.Enqueue(0);
+        //}
     }
 
     public void SeriaDia()

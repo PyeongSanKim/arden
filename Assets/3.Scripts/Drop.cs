@@ -14,15 +14,15 @@ public class Drop : MonoBehaviour, IDropHandler
         if (transform.childCount == 0)
         {
             Drag.dragingItem.transform.SetParent(this.transform);
-            number = GetComponentInChildren<InventorySlot>().itemID;
+            number = GetComponentInChildren<ItemInfo>().ItemID;
         }
     }
 
     void Update()
     {
-        if (transform.childCount == 0)
-        {
-            number = 0;
-        }
+        //if (transform.childCount == 0)
+        //{
+        //    number = 0;
+        //}
     }
 }

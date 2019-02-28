@@ -5,10 +5,9 @@ namespace DataInfo
     [System.Serializable]
     public class Item
     {
-        public int Index;
-        public string name;
-        public string desc;
-        public float price;
+        public int ID;
+        public int count;
+
     }
 
     [System.Serializable]
