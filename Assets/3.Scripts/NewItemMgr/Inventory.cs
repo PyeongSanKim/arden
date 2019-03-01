@@ -11,10 +11,12 @@ public class Inventory : MonoBehaviour
     public void addItem(int itemID)
     {
         itemList[itemID].ItemCount++;
+        itemList[itemID].ItemCheck();
     }
     public void decreseItem(int itemID)
     {
         itemList[itemID].ItemCount--;
+        itemList[itemID].ItemCheck();
     }
     public void resultItem(int itemID)
     {
