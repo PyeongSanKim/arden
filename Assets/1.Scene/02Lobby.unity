@@ -4738,8 +4738,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd930ae997e9a7147a74f71473127ae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MI: {fileID: 686842980}
   ItemID: 0
-  ItemCount: 0
+  ItemCount: 3
   itemContents: {fileID: 524772284}
   result: {fileID: 659321215}
   CountTxt: {fileID: 968294955}
@@ -4815,6 +4816,8 @@ GameObject:
   - component: {fileID: 686842978}
   - component: {fileID: 686842977}
   - component: {fileID: 686842976}
+  - component: {fileID: 686842980}
+  - component: {fileID: 686842979}
   m_Layer: 0
   m_Name: ItemMgr
   m_TagString: Untagged
@@ -4878,6 +4881,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &686842979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686842975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05a83939f1fb29f4683ff9c0d329cb6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &686842980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686842975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed49bfd342db09549a0ab9776ee21c58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameData:
+    Level: 3
+    EXP: 3
+    equipItem: 00000000000000000000000000000000
 --- !u!1 &698418239
 GameObject:
   m_ObjectHideFlags: 0
@@ -8741,8 +8772,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd930ae997e9a7147a74f71473127ae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MI: {fileID: 686842980}
   ItemID: 0
-  ItemCount: 0
+  ItemCount: 3
   itemContents: {fileID: 524772284}
   result: {fileID: 659321215}
   CountTxt: {fileID: 1458739143}
@@ -12846,8 +12878,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd930ae997e9a7147a74f71473127ae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MI: {fileID: 686842980}
   ItemID: 0
-  ItemCount: 0
+  ItemCount: 3
   itemContents: {fileID: 524772284}
   result: {fileID: 659321215}
   CountTxt: {fileID: 1778951988}
@@ -15867,8 +15900,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd930ae997e9a7147a74f71473127ae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MI: {fileID: 686842980}
   ItemID: 0
-  ItemCount: 1
+  ItemCount: 3
   itemContents: {fileID: 524772284}
   result: {fileID: 659321215}
   CountTxt: {fileID: 1485111795}

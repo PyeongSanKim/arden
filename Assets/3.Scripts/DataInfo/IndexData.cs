@@ -2,15 +2,15 @@
 
 namespace IndexInfo
 {
-    [System.Serializable]
-    public class QuestIndex
-    {
-        public Queue<int> Q = new Queue<int>();
-    }
+    //[System.Serializable]
+    //public class QuestIndex
+    //{
+    //    public Queue<int> Q = new Queue<int>();
+    //}
 
     [System.Serializable]
     public class ItemIndex
     {
-        public Queue<int> Q = new Queue<int>();
+        public Queue<Item> Q = new Queue<Item>();
     }
 }

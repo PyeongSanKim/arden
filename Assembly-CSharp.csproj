@@ -62,9 +62,11 @@
   <ItemGroup>
     <Compile Include="Assets\3.Scripts\ActiveFalse.cs" />
     <Compile Include="Assets\3.Scripts\curTime.cs" />
-    <Compile Include="Assets\3.Scripts\DataInfo\DataMgr.cs" />
+    <Compile Include="Assets\3.Scripts\DataInfo\DataManager.cs" />
     <Compile Include="Assets\3.Scripts\DataInfo\GameData.cs" />
     <Compile Include="Assets\3.Scripts\DataInfo\IndexData.cs" />
+    <Compile Include="Assets\3.Scripts\DataInfo\Item.cs" />
+    <Compile Include="Assets\3.Scripts\DataInfo\MgrItem.cs" />
     <Compile Include="Assets\3.Scripts\DataInfo\QuestInfo.cs" />
     <Compile Include="Assets\3.Scripts\Dialogue.cs" />
     <Compile Include="Assets\3.Scripts\DialogueTxt.cs" />
@@ -74,7 +76,6 @@
     <Compile Include="Assets\3.Scripts\MgrButton.cs" />
     <Compile Include="Assets\3.Scripts\MgrCollection.cs" />
     <Compile Include="Assets\3.Scripts\MgrDialogue.cs" />
-    <Compile Include="Assets\3.Scripts\MgrItem.cs" />
     <Compile Include="Assets\3.Scripts\MgrLobby.cs" />
     <Compile Include="Assets\3.Scripts\MgrLogo.cs" />
     <Compile Include="Assets\3.Scripts\NewItemMgr\Inventory.cs" />

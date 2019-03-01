@@ -53,7 +53,7 @@ public class Tutorial : MonoBehaviour
     }
     void Update()
     {
-        Debug.Log(DiaNum);
+        //Debug.Log(DiaNum);
     }
     void Tute()
     {

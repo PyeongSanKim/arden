@@ -1,15 +1,16 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+
 namespace DataInfo
 {
     [System.Serializable]
-    public class Item
+    public class GameData
     {
-        public int ID;
-        public int count;
-
+        public int Level = 1;
+        public int EXP = 0;
+        // 퀘스트
+        public List<int> equipItem = new List<int>();
     }
-
     [System.Serializable]
     public class Quest
     {
@@ -19,7 +20,6 @@ namespace DataInfo
 
         [TextArea(3, 10)]
         public string desc;
-
         public int result;
     }
 }

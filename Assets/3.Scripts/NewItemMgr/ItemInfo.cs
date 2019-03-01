@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class ItemInfo : MonoBehaviour
 {
+    public MgrItem MI;
     public int ItemID;
     public int ItemCount;
     public Transform itemContents;
@@ -14,6 +15,7 @@ public class ItemInfo : MonoBehaviour
     void Start()
     {
         ItemID = int.Parse(transform.name);
+        ItemCount = MI.gameData.equipItem[ItemID];
         ItemCheck();
     }
 
@@ -29,6 +31,7 @@ public class ItemInfo : MonoBehaviour
 
     public void ItemCheck()
     {
+        MI.gameData.equipItem[ItemID] = ItemCount;
         if (ItemCount == 0)
         {
             transform.SetParent(itemContents);
@@ -44,5 +47,6 @@ public class ItemInfo : MonoBehaviour
             gameObject.SetActive(true);
             CountTxt.text = "x " + ItemCount;
         }
+        MI.SaveBtn();
     }
 }
