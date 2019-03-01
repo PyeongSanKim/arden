@@ -6,6 +6,7 @@ public class Inventory : MonoBehaviour
 {
     public int ItemSize;
     public ItemInfo[] itemList;
+    public GameObject resultPan;
 
     public void addItem(int itemID)
     {
@@ -15,10 +16,17 @@ public class Inventory : MonoBehaviour
     {
         itemList[itemID].ItemCount--;
     }
+    public void resultItem(int itemID)
+    {
+        if(resultPan.transform.childCount != 0)
+        {
+            resultPan.GetComponentInChildren<ItemInfo>().itemDown();
+        }
+        itemList[itemID].setResult();
+    }
 
     public void ItemCheck()
     {
-        Debug.Log(ItemSize);
         for(int i=0;i<ItemSize;i++)
         {
             itemList[i].ItemCheck();

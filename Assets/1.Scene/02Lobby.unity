@@ -4402,6 +4402,7 @@ GameObject:
   - component: {fileID: 659321215}
   - component: {fileID: 659321217}
   - component: {fileID: 659321216}
+  - component: {fileID: 659321218}
   m_Layer: 5
   m_Name: result
   m_TagString: Untagged
@@ -4465,6 +4466,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659321214}
   m_CullTransparentMesh: 0
+--- !u!114 &659321218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659321214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2095666955, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 190, y: 190}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 0
+  m_ConstraintCount: 2
 --- !u!1 &680915159
 GameObject:
   m_ObjectHideFlags: 0
@@ -4634,6 +4659,7 @@ MonoBehaviour:
   ItemID: 0
   ItemCount: 0
   itemContents: {fileID: 524772284}
+  result: {fileID: 659321215}
   CountTxt: {fileID: 968294955}
 --- !u!225 &681661579
 CanvasGroup:
@@ -4732,6 +4758,7 @@ MonoBehaviour:
   - {fileID: 1275708321}
   - {fileID: 1751346101}
   - {fileID: 681661578}
+  resultPan: {fileID: 659321214}
 --- !u!114 &686842977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5058,7 +5085,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &732271730
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8600,8 +8627,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemID: 0
-  ItemCount: 1
+  ItemCount: 3
   itemContents: {fileID: 524772284}
+  result: {fileID: 659321215}
   CountTxt: {fileID: 1458739143}
 --- !u!225 &1275708322
 CanvasGroup:
@@ -12773,8 +12801,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemID: 0
-  ItemCount: 1
+  ItemCount: 4
   itemContents: {fileID: 524772284}
+  result: {fileID: 659321215}
   CountTxt: {fileID: 1778951988}
 --- !u!225 &1751346102
 CanvasGroup:
@@ -15927,8 +15956,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ItemID: 0
-  ItemCount: 3
+  ItemCount: 5
   itemContents: {fileID: 524772284}
+  result: {fileID: 659321215}
   CountTxt: {fileID: 1485111795}
 --- !u!1001 &7205689086205442039
 PrefabInstance:
