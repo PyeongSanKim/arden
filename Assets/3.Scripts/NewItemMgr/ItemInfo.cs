@@ -7,7 +7,7 @@ public class ItemInfo : MonoBehaviour
 {
     public int ItemID;
     public int ItemCount;
-
+    public Transform itemContents;
     public Text CountTxt;
 
     void Start()
@@ -16,10 +16,18 @@ public class ItemInfo : MonoBehaviour
         ItemCheck();
     }
 
+    public void itemDown()
+    {
+        transform.SetParent(itemContents);
+    }
+
     public void ItemCheck()
     {
         if (ItemCount == 0)
+        {
+            transform.SetParent(itemContents);
             gameObject.SetActive(false);
+        }
         else if(ItemCount==1)
         {
             gameObject.SetActive(true);

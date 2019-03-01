@@ -78,6 +78,7 @@
     <Compile Include="Assets\3.Scripts\MgrLogo.cs" />
     <Compile Include="Assets\3.Scripts\NewItemMgr\Inventory.cs" />
     <Compile Include="Assets\3.Scripts\NewItemMgr\ItemInfo.cs" />
+    <Compile Include="Assets\3.Scripts\NewItemMgr\MixMgr.cs" />
     <Compile Include="Assets\3.Scripts\NextScene.cs" />
     <Compile Include="Assets\3.Scripts\ObjectBlinkText.cs" />
     <Compile Include="Assets\3.Scripts\ObjectSwipe.cs" />

@@ -4,10 +4,6 @@ using UnityEngine.EventSystems;
 public class Drop : MonoBehaviour, IDropHandler
 {
     public int number;
-    void Awake()
-    {
-
-    }
 
     public void OnDrop(PointerEventData eventData)
     {
@@ -20,9 +16,9 @@ public class Drop : MonoBehaviour, IDropHandler
 
     void Update()
     {
-        //if (transform.childCount == 0)
-        //{
-        //    number = 0;
-        //}
+        if (transform.childCount == 0)
+        {
+            number = -1;
+        }
     }
 }
