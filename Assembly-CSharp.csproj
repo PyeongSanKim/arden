@@ -72,6 +72,7 @@
     <Compile Include="Assets\3.Scripts\DialogueTxt.cs" />
     <Compile Include="Assets\3.Scripts\Drag.cs" />
     <Compile Include="Assets\3.Scripts\Drop.cs" />
+    <Compile Include="Assets\3.Scripts\Drop2.cs" />
     <Compile Include="Assets\3.Scripts\FadeController.cs" />
     <Compile Include="Assets\3.Scripts\MgrButton.cs" />
     <Compile Include="Assets\3.Scripts\MgrCollection.cs" />
@@ -84,9 +85,11 @@
     <Compile Include="Assets\3.Scripts\NextScene.cs" />
     <Compile Include="Assets\3.Scripts\ObjectBlinkText.cs" />
     <Compile Include="Assets\3.Scripts\ObjectSwipe.cs" />
+    <Compile Include="Assets\3.Scripts\QuestComplete.cs" />
     <Compile Include="Assets\3.Scripts\QuestSetActive.cs" />
     <Compile Include="Assets\3.Scripts\RiseUI.cs" />
     <Compile Include="Assets\3.Scripts\Tutorial.cs" />
+    <Compile Include="Assets\3.Scripts\YesOrNo.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/basso/Documents/ard/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

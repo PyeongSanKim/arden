@@ -8,6 +8,7 @@ public class MgrButton : MonoBehaviour
     public Text QuestName;
     public Text QuestHuman;
     public Text QuestDesc;
+    public GameObject YON;
     //public Image result;
 
     public void pressQuestBtn()
@@ -16,5 +17,8 @@ public class MgrButton : MonoBehaviour
         QuestName.text = GetComponent<QuestInfo>().QuestData.name;
         QuestHuman.text = GetComponent<QuestInfo>().QuestData.human;
         QuestDesc.text = GetComponent<QuestInfo>().QuestData.desc;
+        YON.SetActive(true);
+        YON.GetComponent<YesOrNo>().QuestIndex = GetComponent<QuestInfo>().QuestData.Index;
+        YON.GetComponent<YesOrNo>().clearCheck();
     }
 }

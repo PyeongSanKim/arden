@@ -34,11 +34,11 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void allItemDown()
-    {
-        for (int i = 0; i < ItemSize; i++)
-        {
-            itemList[i].itemDown();
-        }
-    }
+    //public void allItemDown()
+    //{
+    //    for (int i = 0; i < ItemSize; i++)
+    //    {
+    //        itemList[i].itemDown();
+    //    }
+    //}
 }

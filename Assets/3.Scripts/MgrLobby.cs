@@ -18,7 +18,7 @@ public class MgrLobby : MonoBehaviour
     public GameObject CollectionPan;
     public GameObject ItemPan;
     public GameObject MixPan;
-
+    public GameObject YON;
     public Text QuestName;
     public Text QuestHuman;
     public Text QuestDesc;
@@ -59,7 +59,7 @@ public class MgrLobby : MonoBehaviour
         QuestName.text = "";
         QuestHuman.text = "";
         QuestDesc.text = "";
-
+        YON.SetActive(false);
     }
     public void ClickItemBtn()
     {

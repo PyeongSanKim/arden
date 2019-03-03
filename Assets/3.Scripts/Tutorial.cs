@@ -7,6 +7,7 @@ public class Tutorial : MonoBehaviour
 {
     public int DiaNum = 0;
     public Inventory inv;
+    public MixMgr MM;
     [SerializeField] DialogueTxt DT0;
     [SerializeField] DialogueTxt DT1;
     [SerializeField] DialogueTxt DT2;
@@ -28,6 +29,8 @@ public class Tutorial : MonoBehaviour
     [SerializeField] DialogueTxt DT18;
     [SerializeField] DialogueTxt DT19;
     [SerializeField] DialogueTxt DT20;
+    [SerializeField] DialogueTxt DT21;
+    [SerializeField] DialogueTxt DT22;
 
     public GameObject Seria;
     public Button QuestBtn;
@@ -37,13 +40,11 @@ public class Tutorial : MonoBehaviour
 
     void Start()
     {
-        if(PlayerPrefs.GetInt("tuto").Equals(0))
-        {
+        if(PlayerPrefs.GetInt("tuto").Equals(0)){
             Invoke("Tute", 1.5f);
         }
-        else
-        {
-            DiaNum = 20;
+        else {
+            DiaNum = 22;
             Seria.SetActive(false);
             QuestBtn.interactable = true;
             ItemBtn.interactable = true;
@@ -51,9 +52,12 @@ public class Tutorial : MonoBehaviour
             MixBtn.interactable = true;
         }
     }
-    void Update()
-    {
-        //Debug.Log(DiaNum);
+    void Update(){
+        if (DiaNum.Equals(19) && PlayerPrefs.GetInt("itemtuto").Equals(1))
+        {
+            PlayerPrefs.SetInt("itemtuto", 0);
+            DT20.DialogueBtn();
+        }
     }
     void Tute()
     {
@@ -62,7 +66,7 @@ public class Tutorial : MonoBehaviour
         ItemBtn.interactable = false;
         CollectBtn.interactable = false;
         MixBtn.interactable = false;
-        PlayerPrefs.SetInt("Quest1", 1);
+        PlayerPrefs.SetInt("Quest0", 1);
         //if (MgrItem.II.Q.Count == 0)
         //{
         //    MgrItem.II.Q.Enqueue(0);
@@ -73,23 +77,32 @@ public class Tutorial : MonoBehaviour
     {
         if (DiaNum.Equals(0))
             DT1.DialogueBtn();
-        else if (DiaNum > 4 && DiaNum < 20)
-        {
-            inv.decreseItem(2);
-            DT19.DialogueBtn();
-        }
+        //else if (DiaNum > 4 && DiaNum < 22)
+        //{
+        //    inv.decreseItem(2);
+        //}
     }
+
     public void FirstQuestBtn()
     {
         ItemBtn.interactable = true;
         if (DiaNum.Equals(2))
             DT3.DialogueBtn();
+        else if (DiaNum.Equals(20))
+        {
+            DT21.DialogueBtn();
+        }
     }
     public void FirstItemBtn()
     {
         CollectBtn.interactable = true;
         if (DiaNum.Equals(3))
             DT4.DialogueBtn();
+        else if (DiaNum.Equals(18))
+        {
+            PlayerPrefs.SetInt("itemtuto", 0);
+            DT19.DialogueBtn();
+        }
     }
     public void FirstCollectBtn()
     {
@@ -99,52 +112,52 @@ public class Tutorial : MonoBehaviour
     }
     public void FirstCityBtn()
     {
-        if (DiaNum > 4 && DiaNum< 20)
+        if (DiaNum > 4 && DiaNum< 17)
             DT6.DialogueBtn();
     }
     public void FirstStoreBtn()
     {
-        if (DiaNum > 4 && DiaNum < 20)
+        if (DiaNum > 4 && DiaNum < 17)
             DT7.DialogueBtn();
     }
     public void FirstMineBtn()
     {
-        if (DiaNum > 4 && DiaNum < 20)
+        if (DiaNum > 4 && DiaNum < 17)
             DT8.DialogueBtn();
     }
     public void FirstMiningBtn()
     {
-        if (DiaNum > 4 && DiaNum < 20)
+        if (DiaNum > 4 && DiaNum < 17)
             DT9.DialogueBtn();
     }
     public void FirstGrassBtn()
     {
-        if (DiaNum > 4 && DiaNum < 20)
+        if (DiaNum > 4 && DiaNum < 17)
             DT10.DialogueBtn();
     }
     public void FirstGrassGetBtn()
     {
-        if (DiaNum > 4 && DiaNum < 20)
+        if (DiaNum > 4 && DiaNum < 17)
             DT11.DialogueBtn();
     }
     public void FirstSlaimeBtn()
     {
-        if (DiaNum > 4 && DiaNum < 20)
+        if (DiaNum > 4 && DiaNum < 17)
             DT12.DialogueBtn();
     }
     public void FirstSandBtn()
     {
-        if (DiaNum > 4 && DiaNum < 20)
+        if (DiaNum > 4 && DiaNum < 17)
             DT13.DialogueBtn();
     }
     public void FirstSandGetBtn()
     {
-        if (DiaNum > 4 && DiaNum < 20)
+        if (DiaNum > 4 && DiaNum < 17)
             DT14.DialogueBtn();
     }
     public void FirstManaBtn()
     {
-        if (DiaNum > 4 && DiaNum < 20)
+        if (DiaNum > 4 && DiaNum < 17)
             DT15.DialogueBtn();
     }
     public void FirstManaGetBtn()
@@ -161,12 +174,12 @@ public class Tutorial : MonoBehaviour
     }
     public void  FirstmixBtn()
     {
-        if (DiaNum == 17)
+        if (DiaNum == 17 && MM.mixItemIndex==2)
         {
             DT18.DialogueBtn();
-            Seria.SetActive(true);
         }
     }
+
 
     public void NextDialogue()
     {
@@ -180,10 +193,7 @@ public class Tutorial : MonoBehaviour
         }
         else if (DiaNum.Equals(19))
         {
-            Seria.SetActive(false);
-            PlayerPrefs.SetInt("tuto", 1);
-            DT20.DialogueBtn();
-            PlayerPrefs.SetInt("Quest1", 0);
+
         }
     }
 }
