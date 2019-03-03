@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MgrLobby : MonoBehaviour
 {
@@ -17,6 +18,10 @@ public class MgrLobby : MonoBehaviour
     public GameObject CollectionPan;
     public GameObject ItemPan;
     public GameObject MixPan;
+
+    public Text QuestName;
+    public Text QuestHuman;
+    public Text QuestDesc;
 
     void Start()
     {
@@ -51,6 +56,10 @@ public class MgrLobby : MonoBehaviour
             QuestPan.SetActive(false);
             isQuest = false;
         }
+        QuestName.text = "";
+        QuestHuman.text = "";
+        QuestDesc.text = "";
+
     }
     public void ClickItemBtn()
     {

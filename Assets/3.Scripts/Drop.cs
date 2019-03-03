@@ -4,6 +4,7 @@ using UnityEngine.EventSystems;
 public class Drop : MonoBehaviour, IDropHandler
 {
     public int number;
+    public MixMgr MM;
 
     public void OnDrop(PointerEventData eventData)
     {
@@ -11,6 +12,7 @@ public class Drop : MonoBehaviour, IDropHandler
         {
             Drag.dragingItem.transform.SetParent(this.transform);
             number = GetComponentInChildren<ItemInfo>().ItemID;
+            MM.conditionCheck();
         }
     }
 

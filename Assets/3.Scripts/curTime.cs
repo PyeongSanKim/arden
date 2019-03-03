@@ -29,21 +29,17 @@ public class curTime : MonoBehaviour
         System.DateTime.Now.ToString("HHmmss");
         //15시 02분 00초
 
-        Debug.Log(System.DateTime.Now.ToString("yyyy-MM-dd"));
+        //Debug.Log(System.DateTime.Now.ToString("yyyy-MM-dd"));
 
-
-
-        System.DateTime StartDate = System.Convert.ToDateTime("2012/05/07 08:00"); // 시작시간
-        System.DateTime EndDate = System.Convert.ToDateTime("2012/05/10 10:20"); // 현재시간( 완료 시간 )
-
-        System.TimeSpan timeCal = EndDate - StartDate; // 시간차 계산
+        System.DateTime StartDate = System.Convert.ToDateTime("2019/03/01 08:00"); // 시작시간
+        System.TimeSpan timeCal = System.DateTime.Now - StartDate; // 시간차 계산
 
         int timeCalDay = timeCal.Days;//날짜 차이
         int timeCalHour = timeCal.Hours; //시간차이
         int timeCalMinute = timeCal.Minutes;// 분 차이
 
-        Debug.Log(timeCalDay);
-        Debug.Log(timeCalHour);
-        Debug.Log(timeCalMinute);
+        Debug.Log("날짜 차 " + timeCalDay);
+        Debug.Log("시간 차 " + timeCalHour);
+        Debug.Log("분 차 " + timeCalMinute);
     }
 }

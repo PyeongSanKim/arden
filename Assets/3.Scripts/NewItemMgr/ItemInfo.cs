@@ -9,7 +9,6 @@ public class ItemInfo : MonoBehaviour
     public int ItemID;
     public int ItemCount;
     public Transform itemContents;
-    public Transform result;
     public Text CountTxt;
 
     void Start()
@@ -19,14 +18,14 @@ public class ItemInfo : MonoBehaviour
         ItemCheck();
     }
 
-    public void setResult()
-    {
-        transform.SetParent(result);
-    }
-
     public void itemDown()
     {
         transform.SetParent(itemContents);
+    }
+
+    public Sprite retSprite()
+    {
+        return GetComponent<Image>().sprite;
     }
 
     public void ItemCheck()
