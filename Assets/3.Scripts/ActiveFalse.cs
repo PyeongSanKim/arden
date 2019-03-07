@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ActiveFalse : MonoBehaviour
 {
-    private void Awake()
+    private void Update()
     {
         if(PlayerPrefs.GetInt("tuto").Equals(1))
         {

@@ -112,52 +112,52 @@ public class Tutorial : MonoBehaviour
     }
     public void FirstCityBtn()
     {
-        if (DiaNum > 4 && DiaNum< 17)
+        if (DiaNum > 4 && DiaNum< 16)
             DT6.DialogueBtn();
     }
     public void FirstStoreBtn()
     {
-        if (DiaNum > 4 && DiaNum < 17)
+        if (DiaNum > 4 && DiaNum < 16)
             DT7.DialogueBtn();
     }
     public void FirstMineBtn()
     {
-        if (DiaNum > 4 && DiaNum < 17)
+        if (DiaNum > 4 && DiaNum < 16)
             DT8.DialogueBtn();
     }
     public void FirstMiningBtn()
     {
-        if (DiaNum > 4 && DiaNum < 17)
+        if (DiaNum > 4 && DiaNum < 16)
             DT9.DialogueBtn();
     }
     public void FirstGrassBtn()
     {
-        if (DiaNum > 4 && DiaNum < 17)
+        if (DiaNum > 4 && DiaNum < 16)
             DT10.DialogueBtn();
     }
     public void FirstGrassGetBtn()
     {
-        if (DiaNum > 4 && DiaNum < 17)
+        if (DiaNum > 4 && DiaNum < 16)
             DT11.DialogueBtn();
     }
     public void FirstSlaimeBtn()
     {
-        if (DiaNum > 4 && DiaNum < 17)
+        if (DiaNum > 4 && DiaNum < 16)
             DT12.DialogueBtn();
     }
     public void FirstSandBtn()
     {
-        if (DiaNum > 4 && DiaNum < 17)
+        if (DiaNum > 4 && DiaNum < 16)
             DT13.DialogueBtn();
     }
     public void FirstSandGetBtn()
     {
-        if (DiaNum > 4 && DiaNum < 17)
+        if (DiaNum > 4 && DiaNum < 16)
             DT14.DialogueBtn();
     }
     public void FirstManaBtn()
     {
-        if (DiaNum > 4 && DiaNum < 17)
+        if (DiaNum > 4 && DiaNum < 16)
             DT15.DialogueBtn();
     }
     public void FirstManaGetBtn()
@@ -179,7 +179,14 @@ public class Tutorial : MonoBehaviour
             DT18.DialogueBtn();
         }
     }
-
+    public void endTuto()
+    {
+        if (DiaNum == 21&&PlayerPrefs.GetInt("tuto").Equals(0))
+        {
+            DT22.DialogueBtn();
+            PlayerPrefs.SetInt("tuto", 1);
+        }
+    }
 
     public void NextDialogue()
     {
@@ -190,10 +197,6 @@ public class Tutorial : MonoBehaviour
             Seria.SetActive(false);
             DT2.DialogueBtn();
             QuestBtn.interactable = true;
-        }
-        else if (DiaNum.Equals(19))
-        {
-
         }
     }
 }

@@ -23,7 +23,6 @@ public class MgrDialogue : MonoBehaviour
     {
         DialogueIndex = dialogue.DialougeIndex;
         DialoguePan.SetActive(true);
-    	nameText.text = dialogue.name;
         IMG.sprite = dialogue.sprite;
         ItemIMG.sprite = dialogue.Itemsprite;
         sentences.Clear();
