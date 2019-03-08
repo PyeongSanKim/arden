@@ -18,9 +18,8 @@ public class NPC : MonoBehaviour
     public QuestDialogueText QDT;
     public void OnNPCBtn(int QuestIndex)
     {
-        Debug.Log("asd");
-        QDT.DialogueBtn();
-
+        //QDT.DialogueBtn();
+        
         // NPC누를경우
         if (QuestIndex.Equals(1))
         {

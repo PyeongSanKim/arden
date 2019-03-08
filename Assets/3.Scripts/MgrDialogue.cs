@@ -19,32 +19,33 @@ public class MgrDialogue : MonoBehaviour
         sentences = new Queue<string>();
     }
 
-    public void StartDialogue (Dialogue dialogue)
+    public void StartDialogue(Dialogue dialogue)
     {
         DialogueIndex = dialogue.DialougeIndex;
         DialoguePan.SetActive(true);
+        nameText.text = dialogue.name;
         IMG.sprite = dialogue.sprite;
         ItemIMG.sprite = dialogue.Itemsprite;
         sentences.Clear();
 
-    	foreach (string sentence in dialogue.sentences)
-    	{
-    		sentences.Enqueue(sentence);
-    	}
-    	DisplayNextSentence();
+        foreach (string sentence in dialogue.sentences)
+        {
+            sentences.Enqueue(sentence);
+        }
+        DisplayNextSentence();
     }
 
-    public void DisplayNextSentence ()
+    public void DisplayNextSentence()
     {
-    	if (sentences.Count == 0)
-    	{
-    		EndDialogue();
-    		return;
-    	}
+        if (sentences.Count == 0)
+        {
+            EndDialogue();
+            return;
+        }
 
-    	string sentence = sentences.Dequeue();
-    	StopAllCoroutines();
-    	StartCoroutine(TypeSentence(sentence));
+        string sentence = sentences.Dequeue();
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
     }
 
     IEnumerator TypeSentence(string sentence)

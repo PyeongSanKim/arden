@@ -38,8 +38,12 @@ public class MgrQuest : MonoBehaviour
 
     public void DisplayNextSentence()
     {
+        Debug.Log(sentences.Count);
+
         if (sentences.Count == 0)
         {
+            Debug.Log("asd");
+
             EndDialogue();
             return;
         }
