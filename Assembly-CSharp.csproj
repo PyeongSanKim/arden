@@ -87,7 +87,7 @@
      <Compile Include="Assets\3.Scripts\RiseUI.cs" />
      <Compile Include="Assets\3.Scripts\Tutorial.cs" />
      <Compile Include="Assets\3.Scripts\YesOrNo.cs" />
-     <Compile Include="Assets\collectRootManager.cs" />
+     <Compile Include="Assets\7.MiniGames\collectRoot\scripts\collectRootManager.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/Users/corykim/Documents/projects/Arden/arden/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
