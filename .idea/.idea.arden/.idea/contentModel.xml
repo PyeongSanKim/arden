@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="arden.sln" t="IncludeFlat" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="3.Scripts" t="Include">
+          <e p="ActiveFalse.cs" t="Include" />
+          <e p="curTime.cs" t="Include" />
+          <e p="DataInfo" t="Include">
+            <e p="DataManager.cs" t="Include" />
+            <e p="GameData.cs" t="Include" />
+            <e p="IndexData.cs" t="Include" />
+            <e p="Item.cs" t="Include" />
+            <e p="MgrItem.cs" t="Include" />
+          </e>
+          <e p="Dialogue.cs" t="Include" />
+          <e p="DialogueTxt.cs" t="Include" />
+          <e p="Drag.cs" t="Include" />
+          <e p="Drop.cs" t="Include" />
+          <e p="Drop2.cs" t="Include" />
+          <e p="FadeController.cs" t="Include" />
+          <e p="MgrCollection.cs" t="Include" />
+          <e p="MgrDialogue.cs" t="Include" />
+          <e p="MgrLobby.cs" t="Include" />
+          <e p="MgrLogo.cs" t="Include" />
+          <e p="NewItemMgr" t="Include">
+            <e p="Inventory.cs" t="Include" />
+            <e p="ItemInfo.cs" t="Include" />
+            <e p="MixMgr.cs" t="Include" />
+          </e>
+          <e p="NextScene.cs" t="Include" />
+          <e p="ObjectBlinkText.cs" t="Include" />
+          <e p="ObjectSwipe.cs" t="Include" />
+          <e p="QuestInfo" t="Include">
+            <e p="AcceptQuest.cs" t="Include" />
+            <e p="MgrButton.cs" t="Include" />
+            <e p="MgrQuest.cs" t="Include" />
+            <e p="NPC.cs" t="Include" />
+            <e p="QuestDialogue.cs" t="Include" />
+            <e p="QuestDialogueText.cs" t="Include" />
+            <e p="QuestInfo.cs" t="Include" />
+            <e p="QuestSetActive.cs" t="Include" />
+          </e>
+          <e p="RiseUI.cs" t="Include" />
+          <e p="Tutorial.cs" t="Include" />
+          <e p="YesOrNo.cs" t="Include" />
+        </e>
+        <e p="7.MiniGames" t="Include">
+          <e p="collectRoot" t="Include">
+            <e p="scripts" t="Include">
+              <e p="collectRootManager.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="PlayerPrefs" t="Include">
+          <e p="Editor" t="Include">
+            <e p="PlayerPrefsEditor" t="Include">
+              <e p="PlayerPrefsEditorUtility.cs" t="Include" />
+              <e p="PlayerPrefsEditorWindow.cs" t="Include" />
+            </e>
+            <e p="PlayerPrefsExtension.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_arden.-1899630571.00" t="ExcludeRecursive" />
+  </component>
+</project>
