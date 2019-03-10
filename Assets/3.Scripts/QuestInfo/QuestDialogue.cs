@@ -6,6 +6,7 @@ using UnityEngine;
 public class QuestDialogue
 {
     public Sprite[] sprites;
+    public string[] name;
 
     [TextArea(3, 10)]
     public string[] sentences;

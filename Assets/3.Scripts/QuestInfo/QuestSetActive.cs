@@ -8,11 +8,17 @@ public class QuestSetActive : MonoBehaviour
     // 1. 수락
     // 2. 거절
     // 3. 완료
+    // 4. 임시수락
+    // 5. 임시거절
     void Update()
     {
         if(PlayerPrefs.GetInt(transform.name,0)!=1)
         {
             gameObject.SetActive(false);
+        }
+        else
+        {
+            gameObject.SetActive(true);
         }
     }
 }

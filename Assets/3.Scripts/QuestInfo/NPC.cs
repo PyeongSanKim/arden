@@ -15,12 +15,11 @@ public class NPC : MonoBehaviour
     // -------------- 구해오기 -------------
     // 네번째 다이얼로그 => 완료
     // PlayerPrafs.SetInt(QuestX) 로 설정
+    [Header("시작 QDT")]
     public QuestDialogueText QDT;
+
     public void OnNPCBtn(int QuestIndex)
     {
-        //QDT.DialogueBtn();
-        
-        // NPC누를경우
         if (QuestIndex.Equals(1))
         {
             QDT.DialogueBtn();
