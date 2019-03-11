@@ -9,7 +9,7 @@ public class AcceptQuest : MonoBehaviour
     public QuestDialogueText AcceptQDT;
     public QuestDialogueText refuseQDT;
     public QuestDialogueText CompleteQDT;
-
+    public GameObject childNPC;
     void Update()
     {
         if (PlayerPrefs.GetInt("Quest" + AQindex).Equals(4))
@@ -27,12 +27,13 @@ public class AcceptQuest : MonoBehaviour
         {
             PlayerPrefs.SetInt("Quest" + AQindex, 3);
             CompleteQDT.DialogueBtn();
+            childNPC.SetActive(false);
         }
 
         if (PlayerPrefs.GetInt("Quest" + AQindex + "X").Equals(1))
         {
             PlayerPrefs.SetInt("Quest" + AQindex + "X", 0);
-            gameObject.SetActive(false);
+            childNPC.gameObject.SetActive(false);
         }
     }
 }

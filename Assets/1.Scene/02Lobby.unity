@@ -7079,6 +7079,7 @@ MonoBehaviour:
   - {fileID: 7352097204538625050}
   YES: {fileID: 1494547952}
   inv: {fileID: 686842976}
+  SlotContents: {fileID: 418353882}
 --- !u!224 &249992137
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8571,7 +8572,7 @@ PrefabInstance:
     - target: {fileID: 1373224992616181195, guid: c79d5b79224c5b249a8c74363de8fb7f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1373224992616181199, guid: c79d5b79224c5b249a8c74363de8fb7f,
         type: 3}
@@ -47678,7 +47679,7 @@ PrefabInstance:
         type: 3}
       propertyPath: QuestData.desc
       value: "\uC608\uC220\uD488 \uC218\uC9D1\uAC00 \uB365\uC2A4\uC5D0\uAC8C \uC628
-        \uC758\uB8B0\n[\uC81C\uB828\uB41C \uAE08] 3\uAC1C\uC640 [\uD669\uAE08 \uB125\uD06C\uB808\uC2A4]
+        \uC758\uB8B0\n[\uC81C\uB828\uB41C \uAE08] 3\uAC1C\uC640 [\uAE08\uBAA9\uAC78\uC774]
         [\uC624\uB2C9\uC2A4 \uBC18\uC9C0] \uB97C\n\uAD6C\uD574\uB2E4 \uC8FC\uC790."
       objectReference: {fileID: 0}
     - target: {fileID: 8560641085658919615, guid: 9cadbc10150948547b0a5e5b058c7b2a,

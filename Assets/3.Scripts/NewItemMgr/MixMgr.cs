@@ -50,6 +50,8 @@ public class MixMgr : MonoBehaviour
             mixItemIndex = 163; /////////
             checkMixItem();
         }
+
+
         else
         {
             IMG.sprite = nul;

@@ -13,22 +13,10 @@ public class YesOrNo : MonoBehaviour
     public GameObject YES;
     public Inventory inv;
     public GameObject SlotContents;
+
     public void clearCheck()
     {
-        //for (int i = 0; i < 9; i++)
-        //{
-        //    /if(i==8)
-        //    /{
-        //    /    YES.SetActive(false);
-        //    /}
-        //    /else if (QuestIndex.Equals(0)&&ItemSlot[i].number == 163) // 아이템 인덱스 체크
-        //    /{
-        //    /    YES.SetActive(true);
-        //    /    break; 
-        //    /}
-
-
-        //}
+        YES.SetActive(false);
         ItemInfo[] SC = SlotContents.GetComponentsInChildren<ItemInfo>();
         bool[] isItem = new bool[SC.Length];
         int enoughIndex = 0;
@@ -38,23 +26,39 @@ public class YesOrNo : MonoBehaviour
         }
 
 
-        //////////
-        if (QuestIndex.Equals(0) && SC.Length >= 2)
+        ////////// 여기 부분을 수정 /////////////
+        if (QuestIndex.Equals(0) && SC.Length >= 1) // 퀘스트 인덱스,재료수
         {
-            enoughIndex = 2;
+            enoughIndex = 1;
             for (int i = 0; i < SC.Length; i++)
             {
                 if (SC[i].ItemID == 1 && SC[i].ItemCount >= 1)
                 {
                     isItem[0] = true;
                 }
-                if (SC[i].ItemID == 163 && SC[i].ItemCount >= 1)
+            }
+        }
+
+        if (QuestIndex.Equals(1) && SC.Length >= 3)
+        {
+            enoughIndex = 3;
+            for (int i = 0; i < SC.Length; i++)
+            {
+                if (SC[i].ItemID == 25 && SC[i].ItemCount >= 1)
+                {
+                    isItem[0] = true;
+                }
+                if (SC[i].ItemID == 155 && SC[i].ItemCount >= 3)
                 {
                     isItem[1] = true;
                 }
+                if (SC[i].ItemID == 126 && SC[i].ItemCount >= 1)
+                {
+                    isItem[2] = true;
+                }
             }
         }
-        //////////
+        ///////////////////////////////////////////
         for (int i = 0; i < enoughIndex; i++)
         {
             if (isItem[i] == false)
@@ -73,10 +77,23 @@ public class YesOrNo : MonoBehaviour
         // Quest인덱스 검사
         //       매대 물품 감소
         //       보상획득
+
+
+        ////////// 여기 부분을 수정 /////////////
         if (QuestIndex.Equals(0))
         {
-            inv.decreseItem(163); ////////
+            inv.decreseItem(163); 
         }
+        if (QuestIndex.Equals(1))
+        {
+            inv.decreseItem(25);
+            inv.decreseItem(155);
+            inv.decreseItem(155);
+            inv.decreseItem(155);
+            inv.decreseItem(126);
+        }
+        ///////////////////////////////////////////
+
         noBtn(6);
     }
     // 0. 미수락
