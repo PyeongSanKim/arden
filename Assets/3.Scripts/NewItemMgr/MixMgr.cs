@@ -31,11 +31,11 @@ public class MixMgr : MonoBehaviour
     {
         // 믹스버튼
         conditionCheck();
-        if (mixItemIndex == 2)
+        if (mixItemIndex == 163)  /////////
         {
-            inv.decreseItem(0);
-            inv.decreseItem(1);
-            inv.addItem(2);
+            inv.decreseItem(84);  /////////
+            inv.decreseItem(87);  /////////
+            inv.addItem(163);      /////////
             inv.ItemCheck();
         }
         StartCoroutine(CC());
@@ -43,11 +43,11 @@ public class MixMgr : MonoBehaviour
 
     public void conditionCheck()
     {
-        if (mixSlot[1].number == -1 && mixSlot[2].number == 0 && mixSlot[3].number == -1 &&
-            mixSlot[4].number == -1 && mixSlot[5].number == 1 && mixSlot[6].number == -1 &&
-            mixSlot[7].number == -1 && mixSlot[8].number == -1 && mixSlot[9].number == -1)
+        if (mixSlot[1].number == -1 && mixSlot[2].number == 84 && mixSlot[3].number == -1 &&
+            mixSlot[4].number == -1 && mixSlot[5].number == 87 && mixSlot[6].number == -1 &&
+            mixSlot[7].number == -1 && mixSlot[8].number == -1 && mixSlot[9].number == -1) ///////////
         {
-            mixItemIndex = 2;
+            mixItemIndex = 163; /////////
             checkMixItem();
         }
         else

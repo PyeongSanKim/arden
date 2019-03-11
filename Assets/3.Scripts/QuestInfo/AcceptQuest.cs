@@ -8,6 +8,7 @@ public class AcceptQuest : MonoBehaviour
     public GameObject QuestItem;
     public QuestDialogueText AcceptQDT;
     public QuestDialogueText refuseQDT;
+    public QuestDialogueText CompleteQDT;
 
     void Update()
     {
@@ -21,6 +22,11 @@ public class AcceptQuest : MonoBehaviour
         {
             PlayerPrefs.SetInt("Quest" + AQindex, 2);
             refuseQDT.DialogueBtn();
+        }
+        else if (PlayerPrefs.GetInt("Quest" + AQindex).Equals(6))
+        {
+            PlayerPrefs.SetInt("Quest" + AQindex, 3);
+            CompleteQDT.DialogueBtn();
         }
 
         if (PlayerPrefs.GetInt("Quest" + AQindex + "X").Equals(1))
