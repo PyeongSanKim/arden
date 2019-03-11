@@ -20,11 +20,12 @@ public class YesOrNo : MonoBehaviour
             {
                 YES.SetActive(false);
             }
-            else if (QuestIndex.Equals(0)&&ItemSlot[i].number == 2)
+            else if (QuestIndex.Equals(0)&&ItemSlot[i].number == 2) // 아이템 인덱스 체크
             {
                 YES.SetActive(true);
                 break;
             }
+
         }
     }
     public void yesBtn()
@@ -36,14 +37,17 @@ public class YesOrNo : MonoBehaviour
         {
             inv.decreseItem(2);
         }
-
+        if (QuestIndex.Equals(1))
+        {
+            inv.decreseItem(2); // 아이템 인덱스
+        }
         noBtn(3);
     }
     // 0. 미수락
     // 1. 수락
     // 2. 거절
     // 3. 완료
-    public void noBtn(int index)
+    public void noBtn(int index) // 퀘스트 거절시 여기에 버튼연결해서 2번으로 바꾸기
     {
         gameObject.SetActive(false);
         string Q = "Quest" + QuestIndex;

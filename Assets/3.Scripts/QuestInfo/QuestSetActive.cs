@@ -16,9 +16,5 @@ public class QuestSetActive : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
-        else
-        {
-            gameObject.SetActive(true);
-        }
     }
 }
