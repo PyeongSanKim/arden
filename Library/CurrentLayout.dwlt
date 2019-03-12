@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 1121, y: 398}
   m_MaxSize: {x: 26016, y: 14048}
   vertical: 1
-  controlID: 106
+  controlID: 888
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 1121, y: 274}
   m_MaxSize: {x: 26016, y: 10024}
   vertical: 0
-  controlID: 107
+  controlID: 889
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -159,8 +159,8 @@ MonoBehaviour:
     y: 0
     width: 204
     height: 734
-  m_MinSize: {x: 202, y: 224}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -190,7 +190,7 @@ MonoBehaviour:
   m_MinSize: {x: 919, y: 274}
   m_MaxSize: {x: 22014, y: 10024}
   vertical: 0
-  controlID: 108
+  controlID: 819
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -216,7 +216,7 @@ MonoBehaviour:
   m_MinSize: {x: 642, y: 274}
   m_MaxSize: {x: 18012, y: 10024}
   vertical: 0
-  controlID: 109
+  controlID: 820
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -378,9 +378,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 721.5047, y: 822.5547, z: -9.012973}
+    m_Target: {x: 417.3929, y: 1086.7399, z: -5.0731144}
     speed: 2
-    m_Value: {x: 721.5047, y: 822.5547, z: -9.012973}
+    m_Value: {x: 417.3929, y: 1086.7399, z: -5.0731144}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -412,9 +412,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1828.761
+    m_Target: 1435.9265
     speed: 2
-    m_Value: 1828.761
+    m_Value: 1435.9265
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -455,9 +455,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: d4fbffff
+      m_SelectedIDs: 78140000
+      m_LastClickedID: 5240
+      m_ExpandedIDs: d4fbffff78140000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -599,19 +599,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/3.Scripts
+    - Assets/7.MiniGames/collectRoot/scripts
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/3.Scripts
+  - Assets/7.MiniGames/collectRoot/scripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /Users/corykim/Documents/projects/Arden/arden
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ac100000
-    m_LastClickedID: 4268
+    m_SelectedIDs: b80d0000
+    m_LastClickedID: 3512
     m_ExpandedIDs: 00000000c4090000880a0000880b00000c0c0000860f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -640,7 +640,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c4090000880a0000880b00000c0c0000860f0000
+    m_ExpandedIDs: 00000000c4090000880a0000880b00000c0c0000860f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

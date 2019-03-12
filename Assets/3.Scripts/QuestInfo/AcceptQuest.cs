@@ -5,14 +5,17 @@ using UnityEngine;
 public class AcceptQuest : MonoBehaviour
 {
     public int AQindex;
+    public GameObject QuestItem;
     public QuestDialogueText AcceptQDT;
     public QuestDialogueText refuseQDT;
-
+    public QuestDialogueText CompleteQDT;
+    public GameObject childNPC;
     void Update()
     {
-        if(PlayerPrefs.GetInt("Quest"+AQindex).Equals(4))
+        if (PlayerPrefs.GetInt("Quest" + AQindex).Equals(4))
         {
             PlayerPrefs.SetInt("Quest" + AQindex, 1);
+            QuestItem.SetActive(true);
             AcceptQDT.DialogueBtn();
         }
         else if (PlayerPrefs.GetInt("Quest" + AQindex).Equals(5))
@@ -20,11 +23,17 @@ public class AcceptQuest : MonoBehaviour
             PlayerPrefs.SetInt("Quest" + AQindex, 2);
             refuseQDT.DialogueBtn();
         }
-        
-        if(PlayerPrefs.GetInt("Quest"+AQindex+"X").Equals(1))
+        else if (PlayerPrefs.GetInt("Quest" + AQindex).Equals(6))
+        {
+            PlayerPrefs.SetInt("Quest" + AQindex, 3);
+            CompleteQDT.DialogueBtn();
+            childNPC.SetActive(false);
+        }
+
+        if (PlayerPrefs.GetInt("Quest" + AQindex + "X").Equals(1))
         {
             PlayerPrefs.SetInt("Quest" + AQindex + "X", 0);
-            gameObject.SetActive(false);
+            childNPC.gameObject.SetActive(false);
         }
     }
 }

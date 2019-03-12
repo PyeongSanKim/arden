@@ -20,7 +20,7 @@ public class NPC : MonoBehaviour
 
     public void OnNPCBtn(int QuestIndex)
     {
-        if (QuestIndex.Equals(1))
+        if (PlayerPrefs.GetInt("Quest" + QuestIndex).Equals(0))
         {
             QDT.DialogueBtn();
         }

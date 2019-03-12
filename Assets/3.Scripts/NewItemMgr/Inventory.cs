@@ -18,14 +18,6 @@ public class Inventory : MonoBehaviour
         itemList[itemID].ItemCount--;
         itemList[itemID].ItemCheck();
     }
-    //public void resultItem(int itemID)
-    //{
-    //    if(resultPan.transform.childCount != 0)
-    //    {
-    //        resultPan.GetComponentInChildren<ItemInfo>().itemDown();
-    //    }
-    //}
-
     public void ItemCheck()
     {
         for(int i=0;i<ItemSize;i++)
@@ -33,12 +25,4 @@ public class Inventory : MonoBehaviour
             itemList[i].ItemCheck();
         }
     }
-
-    //public void allItemDown()
-    //{
-    //    for (int i = 0; i < ItemSize; i++)
-    //    {
-    //        itemList[i].itemDown();
-    //    }
-    //}
 }
