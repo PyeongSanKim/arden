@@ -52,6 +52,7 @@
           <e p="collectRoot" t="Include">
             <e p="scripts" t="Include">
               <e p="collectRootManager.cs" t="Include" />
+              <e p="rootProgressBar.cs" t="Include" />
             </e>
           </e>
         </e>
