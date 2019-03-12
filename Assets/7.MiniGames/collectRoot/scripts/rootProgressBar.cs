@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class rootProgressBar : MonoBehaviour
 {
     private Image progressBar;
-    private int playerValue;
     private int totalPlayerValue;
     private float rootValue;
     
@@ -34,14 +33,11 @@ public class rootProgressBar : MonoBehaviour
 
     public IEnumerator moveProgressBarWith(int clickedPlayerValue)
     {
-        float speed = 1f;
+        float speed = 0.5f;
         totalPlayerValue += clickedPlayerValue;
         float previousTotalPlayerValue = totalPlayerValue - clickedPlayerValue;
 
         float t = previousTotalPlayerValue;
-        
-        Debug.Log("previous :" + previousTotalPlayerValue);
-        Debug.Log("clicked :" + clickedPlayerValue);
         
         while (t < totalPlayerValue)
         {
@@ -54,10 +50,5 @@ public class rootProgressBar : MonoBehaviour
     public void setRootValue(int rootValue)
     {
         this.rootValue = (float)rootValue;
-    }
-    
-    public void setPlayerValue(int playerValue)
-    {
-        this.playerValue = playerValue;
     }
 }
