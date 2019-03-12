@@ -17,40 +17,53 @@ public class collectRootManager : MonoBehaviour
     public Text totalPlayerValueText;
     public GameObject failedTextPower;
     public GameObject failedTextTrial;
-    
+
+    private static collectRootManager instance;
+
+    public static collectRootManager Instance
+    {
+        get { return instance; }
+    }
+
+    private void Awake()
+    {
+        if (instance)
+        {
+            Destroy(gameObject);
+        }
+
+        instance = this;
+    }
+
     void Start()
     {
         updateNumberOfLeftText();
         setRootValue();
+        rootProgressBar.Instance.setRootValue(rootValue);
         totalPlayerValue = 0;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
     
     public void clickCollectBtnWith(string power)
     {   
         generatePlayerValueWith(power);
         totalPlayerValue += playerValue;
-        Debug.Log(rootValue);
-        Debug.Log((rootValue * 12) / 100);
+        
         if (totalPlayerValue >= rootValue + ((rootValue * 12) / 100))
         {
             failedCollectingWith("overPower");
+            Time.timeScale = 0;
         }
         
         numberOfLeft--;
         if (numberOfLeft <= 0)
         {
             failedCollectingWith("overTrial");
+            Time.timeScale = 0;
         }
-        
-        updateNumberOfLeftText();
-        updatePlayerValue();
-        updateTotalPlayerValue();
+
+        StartCoroutine(rootProgressBar.Instance.moveProgressBarWith(playerValue));
+
+        updateForTest();        
     }
     
     private void generatePlayerValueWith(string power)
@@ -83,6 +96,13 @@ public class collectRootManager : MonoBehaviour
                 failedTextTrial.GetComponent<Text>().enabled = true;
                 break;
         }
+    }
+
+    void updateForTest()
+    {
+        updateNumberOfLeftText();
+        updatePlayerValue();
+        updateTotalPlayerValue();
     }
 
     void setRootValue()
