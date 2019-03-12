@@ -9,11 +9,14 @@ public class collectRootManager : MonoBehaviour
     [SerializeField]private int numberOfLeft = 4;
     private int rootValue;
     private int playerValue;
+    private int totalPlayerValue;
+    
     public Text numberOfLeftText;
     public Text rootValueText;
     public Text playerValueText;
     public Text totalPlayerValueText;
-    private int totalPlayerValue;
+    public GameObject failedTextPower;
+    public GameObject failedTextTrial;
     
     void Start()
     {
@@ -29,27 +32,55 @@ public class collectRootManager : MonoBehaviour
     }
     
     public void clickCollectBtnWith(string power)
-    {
-        generatePlayerValue(power);
+    {   
+        generatePlayerValueWith(power);
         totalPlayerValue += playerValue;
+        Debug.Log(rootValue);
+        Debug.Log((rootValue * 12) / 100);
+        if (totalPlayerValue >= rootValue + ((rootValue * 12) / 100))
+        {
+            failedCollectingWith("overPower");
+        }
+        
         numberOfLeft--;
+        if (numberOfLeft <= 0)
+        {
+            failedCollectingWith("overTrial");
+        }
+        
         updateNumberOfLeftText();
         updatePlayerValue();
         updateTotalPlayerValue();
     }
     
-    private void generatePlayerValue(string power)
+    private void generatePlayerValueWith(string power)
     {
         switch (power)
         {
             case "weak":
-                playerValue = Random.Range(5, 10);
+                playerValue = Random.Range(2, 10);
                 break;
             case "normal":
-                playerValue = Random.Range(13, 23);
+                playerValue = Random.Range(13, 18);
                 break;
             case "strong":
-                playerValue = Random.Range(25, 30);
+                playerValue = Random.Range(22, 34);
+                break;
+        }
+        
+    }
+
+    private void failedCollectingWith(string reason)
+    {
+        switch (reason)
+        {
+            case "overPower":
+                Debug.Log("overPower");
+                failedTextPower.GetComponent<Text>().enabled = true;
+                break;
+            case "overTrial":
+                Debug.Log("overTrial");
+                failedTextTrial.GetComponent<Text>().enabled = true;
                 break;
         }
     }
