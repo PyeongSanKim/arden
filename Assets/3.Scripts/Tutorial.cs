@@ -174,7 +174,7 @@ public class Tutorial : MonoBehaviour
     }
     public void  FirstmixBtn()
     {
-        if (DiaNum == 17 && MM.mixItemIndex==2)
+        if (DiaNum == 17 && MM.mixItemIndex==163)
         {
             DT18.DialogueBtn();
         }
