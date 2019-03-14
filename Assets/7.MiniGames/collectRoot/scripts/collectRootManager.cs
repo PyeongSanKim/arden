@@ -17,6 +17,7 @@ public class collectRootManager : MonoBehaviour
     public Text totalPlayerValueText;
     public GameObject failedTextPower;
     public GameObject failedTextTrial;
+    public GameObject endPanel;
 
     private static collectRootManager instance;
 
@@ -37,6 +38,7 @@ public class collectRootManager : MonoBehaviour
 
     void Start()
     {
+        endPanel.SetActive(false);
         updateNumberOfLeftText();
         setRootValue();
         rootProgressBar.Instance.setRootValue(rootValue);
@@ -51,14 +53,12 @@ public class collectRootManager : MonoBehaviour
         if (totalPlayerValue >= rootValue + ((rootValue * 12) / 100))
         {
             failedCollectingWith("overPower");
-            Time.timeScale = 0;
         }
         
         numberOfLeft--;
         if (numberOfLeft <= 0)
         {
             failedCollectingWith("overTrial");
-            Time.timeScale = 0;
         }
 
         StartCoroutine(rootProgressBar.Instance.moveProgressBarWith(playerValue));
@@ -80,11 +80,13 @@ public class collectRootManager : MonoBehaviour
                 playerValue = Random.Range(22, 34);
                 break;
         }
-        
     }
 
     private void failedCollectingWith(string reason)
     {
+        endPanel.SetActive(true);
+        Time.timeScale = 0;
+        
         switch (reason)
         {
             case "overPower":
