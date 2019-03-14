@@ -15,9 +15,9 @@ public class collectRootManager : MonoBehaviour
     public Text rootValueText;
     public Text playerValueText;
     public Text totalPlayerValueText;
-    public GameObject failedTextPower;
-    public GameObject failedTextTrial;
+    public GameObject failedText;
     public GameObject endPanel;
+    public GameObject reallyPanel;
 
     private static collectRootManager instance;
 
@@ -39,6 +39,8 @@ public class collectRootManager : MonoBehaviour
     void Start()
     {
         endPanel.SetActive(false);
+        reallyPanel.SetActive(false);
+        failedText.GetComponent<Text>().enabled = false;
         updateNumberOfLeftText();
         setRootValue();
         rootProgressBar.Instance.setRootValue(rootValue);
@@ -50,20 +52,70 @@ public class collectRootManager : MonoBehaviour
         generatePlayerValueWith(power);
         totalPlayerValue += playerValue;
         
-        if (totalPlayerValue >= rootValue + ((rootValue * 12) / 100))
+        StartCoroutine(rootProgressBar.Instance.moveProgressBarWith(playerValue));
+        
+        updateForTest();
+        
+        if (totalPlayerValue > rootValue + ((rootValue * 12) / 100))
         {
             failedCollectingWith("overPower");
+            return;
         }
-        
+
         numberOfLeft--;
+        updateNumberOfLeftText();
+        
         if (numberOfLeft <= 0)
         {
             failedCollectingWith("overTrial");
+        } 
+    }
+
+    public void clickFinishYes()
+    {
+        reallyPanel.SetActive(false);
+        checkRewards();
+    }
+    
+    public void clickFinishNo()
+    {
+        reallyPanel.SetActive(false);
+    }
+
+    public void clickFinishBtn()
+    {
+        if (numberOfLeft > 0)
+        {
+            // 아직 횟수가 남았는데 정말 그만 할거에요?
+            reallyPanel.SetActive(true);
+        }
+    }
+
+    public void checkRewards()
+    {
+        if (totalPlayerValue == rootValue)
+        {
+            // 최고 보상
+            clearCollectionWith(1);
+            return;
         }
 
-        StartCoroutine(rootProgressBar.Instance.moveProgressBarWith(playerValue));
-
-        updateForTest();        
+        if (totalPlayerValue <= rootValue + ((rootValue * 7) / 100) && totalPlayerValue >= rootValue - ((rootValue * 7) / 100))
+        {
+            // 2번째 보상
+            clearCollectionWith(2);
+            return;
+        }
+        
+        if (totalPlayerValue <= rootValue + ((rootValue * 12) / 100) && totalPlayerValue >= rootValue - ((rootValue * 12) / 100))
+        {
+            // 3번째 보상
+            clearCollectionWith(3);
+            return;
+        }
+        
+        failedText.GetComponent<Text>().enabled = true;
+        failedText.GetComponent<Text>().text = "너무 얕게 팠어요!\n채집 실패!";
     }
     
     private void generatePlayerValueWith(string power)
@@ -86,23 +138,43 @@ public class collectRootManager : MonoBehaviour
     {
         endPanel.SetActive(true);
         Time.timeScale = 0;
+        failedText.GetComponent<Text>().enabled = true;
         
         switch (reason)
         {
             case "overPower":
                 Debug.Log("overPower");
-                failedTextPower.GetComponent<Text>().enabled = true;
+                failedText.GetComponent<Text>().text = "이런! 뿌리가 손상되버렸어요!\n채집 실패!";
                 break;
             case "overTrial":
                 Debug.Log("overTrial");
-                failedTextTrial.GetComponent<Text>().enabled = true;
+                failedText.GetComponent<Text>().text = "가능한 채집 횟수를 초과!\n채집 실패!";
+                break;
+        }
+    }
+
+    private void clearCollectionWith(int rank)
+    {
+        endPanel.SetActive(true);
+        Time.timeScale = 0;
+        failedText.GetComponent<Text>().enabled = true;
+        
+        switch (rank)
+        {
+            case 1:
+                failedText.GetComponent<Text>().text = "1등!";
+                break;
+            case 2:
+                failedText.GetComponent<Text>().text = "2등!";
+                break;
+            case 3:
+                failedText.GetComponent<Text>().text = "3등!";
                 break;
         }
     }
 
     void updateForTest()
     {
-        updateNumberOfLeftText();
         updatePlayerValue();
         updateTotalPlayerValue();
     }
