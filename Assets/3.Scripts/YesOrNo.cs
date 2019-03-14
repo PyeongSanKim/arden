@@ -13,6 +13,8 @@ public class YesOrNo : MonoBehaviour
     public GameObject YES;
     public Inventory inv;
     public GameObject SlotContents;
+    int Gold;
+
 
     public void clearCheck()
     {
@@ -32,7 +34,7 @@ public class YesOrNo : MonoBehaviour
             enoughIndex = 1;
             for (int i = 0; i < SC.Length; i++)
             {
-                if (SC[i].ItemID == 1 && SC[i].ItemCount >= 1)
+                if (SC[i].ItemID == 163 && SC[i].ItemCount >= 1)
                 {
                     isItem[0] = true;
                 }
@@ -91,12 +93,16 @@ public class YesOrNo : MonoBehaviour
             inv.decreseItem(155);
             inv.decreseItem(155);
             inv.decreseItem(126);
+            Gold = PlayerPrefs.GetInt("Gold");
+            Gold += 100;
+            PlayerPrefs.SetInt("Gold", Gold);
         }
         ///////////////////////////////////////////
 
         noBtn(6);
     }
-    // 0. 미수락
+    // -1. 수락가능
+    // 0. 미수락 (디폴트)
     // 1. 수락
     // 2. 거절
     // 3. 완료
