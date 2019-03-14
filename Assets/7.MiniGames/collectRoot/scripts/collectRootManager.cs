@@ -32,12 +32,12 @@ public class collectRootManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
         instance = this;
     }
 
     void Start()
     {
+        numberOfLeft = 6;
         endPanel.SetActive(false);
         reallyPanel.SetActive(false);
         failedText.GetComponent<Text>().enabled = false;
@@ -58,7 +58,7 @@ public class collectRootManager : MonoBehaviour
         
         if (totalPlayerValue > rootValue + ((rootValue * 12) / 100))
         {
-            failedCollectingWith("overPower");
+            failedCollectingWithOverPower();
             return;
         }
 
@@ -67,7 +67,10 @@ public class collectRootManager : MonoBehaviour
         
         if (numberOfLeft <= 0)
         {
-            failedCollectingWith("overTrial");
+            if (totalPlayerValue < rootValue - ((rootValue * 12) / 100))
+            {
+                checkRewards();
+            }
         } 
     }
 
@@ -114,8 +117,10 @@ public class collectRootManager : MonoBehaviour
             return;
         }
         
+        endPanel.SetActive(true);
         failedText.GetComponent<Text>().enabled = true;
         failedText.GetComponent<Text>().text = "너무 얕게 팠어요!\n채집 실패!";
+        return;
     }
     
     private void generatePlayerValueWith(string power)
@@ -126,31 +131,20 @@ public class collectRootManager : MonoBehaviour
                 playerValue = Random.Range(2, 10);
                 break;
             case "normal":
-                playerValue = Random.Range(13, 18);
+                playerValue = Random.Range(11, 20);
                 break;
             case "strong":
-                playerValue = Random.Range(22, 34);
+                playerValue = Random.Range(21, 32);
                 break;
         }
     }
 
-    private void failedCollectingWith(string reason)
+    private void failedCollectingWithOverPower()
     {
         endPanel.SetActive(true);
         Time.timeScale = 0;
         failedText.GetComponent<Text>().enabled = true;
-        
-        switch (reason)
-        {
-            case "overPower":
-                Debug.Log("overPower");
-                failedText.GetComponent<Text>().text = "이런! 뿌리가 손상되버렸어요!\n채집 실패!";
-                break;
-            case "overTrial":
-                Debug.Log("overTrial");
-                failedText.GetComponent<Text>().text = "가능한 채집 횟수를 초과!\n채집 실패!";
-                break;
-        }
+        failedText.GetComponent<Text>().text = "이런! 뿌리가 손상되버렸어요!\n채집 실패!";
     }
 
     private void clearCollectionWith(int rank)
@@ -162,13 +156,13 @@ public class collectRootManager : MonoBehaviour
         switch (rank)
         {
             case 1:
-                failedText.GetComponent<Text>().text = "1등!";
+                failedText.GetComponent<Text>().text = "축하합니다!!\n1등!";
                 break;
             case 2:
-                failedText.GetComponent<Text>().text = "2등!";
+                failedText.GetComponent<Text>().text = "축하합니다!!\n2등!";
                 break;
             case 3:
-                failedText.GetComponent<Text>().text = "3등!";
+                failedText.GetComponent<Text>().text = "축하합니다!!\n3등!";
                 break;
         }
     }
