@@ -48,7 +48,12 @@ public class collectRootManager : MonoBehaviour
     }
     
     public void clickCollectBtnWith(string power)
-    {   
+    {
+        if (numberOfLeft <= 0)
+        {
+            return;
+        }
+        
         generatePlayerValueWith(power);
         totalPlayerValue += playerValue;
         
@@ -64,14 +69,6 @@ public class collectRootManager : MonoBehaviour
 
         numberOfLeft--;
         updateNumberOfLeftText();
-        
-        if (numberOfLeft <= 0)
-        {
-            if (totalPlayerValue < rootValue - ((rootValue * 12) / 100))
-            {
-                checkRewards();
-            }
-        } 
     }
 
     public void clickFinishYes()
@@ -87,9 +84,14 @@ public class collectRootManager : MonoBehaviour
 
     public void clickFinishBtn()
     {
+        if (numberOfLeft <= 0)
+        {
+            checkRewards();
+            return;
+        }
+
         if (numberOfLeft > 0)
         {
-            // 아직 횟수가 남았는데 정말 그만 할거에요?
             reallyPanel.SetActive(true);
         }
     }
@@ -120,7 +122,6 @@ public class collectRootManager : MonoBehaviour
         endPanel.SetActive(true);
         failedText.GetComponent<Text>().enabled = true;
         failedText.GetComponent<Text>().text = "너무 얕게 팠어요!\n채집 실패!";
-        return;
     }
     
     private void generatePlayerValueWith(string power)
