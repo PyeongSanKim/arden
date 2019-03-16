@@ -15,8 +15,9 @@ public class collectRootManager : MonoBehaviour
     public Text rootValueText;
     public Text playerValueText;
     public Text totalPlayerValueText;
-    public GameObject failedTextPower;
-    public GameObject failedTextTrial;
+    public GameObject failedText;
+    public GameObject endPanel;
+    public GameObject reallyPanel;
 
     private static collectRootManager instance;
 
@@ -31,12 +32,15 @@ public class collectRootManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
         instance = this;
     }
 
     void Start()
     {
+        numberOfLeft = 6;
+        endPanel.SetActive(false);
+        reallyPanel.SetActive(false);
+        failedText.GetComponent<Text>().enabled = false;
         updateNumberOfLeftText();
         setRootValue();
         rootProgressBar.Instance.setRootValue(rootValue);
@@ -44,26 +48,80 @@ public class collectRootManager : MonoBehaviour
     }
     
     public void clickCollectBtnWith(string power)
-    {   
+    {
+        if (numberOfLeft <= 0)
+        {
+            return;
+        }
+        
         generatePlayerValueWith(power);
         totalPlayerValue += playerValue;
         
-        if (totalPlayerValue >= rootValue + ((rootValue * 12) / 100))
-        {
-            failedCollectingWith("overPower");
-            Time.timeScale = 0;
-        }
+        StartCoroutine(rootProgressBar.Instance.moveProgressBarWith(playerValue));
         
+        updateForTest();
+        
+        if (totalPlayerValue > rootValue + ((rootValue * 12) / 100))
+        {
+            failedCollectingWithOverPower();
+            return;
+        }
+
         numberOfLeft--;
+        updateNumberOfLeftText();
+    }
+
+    public void clickFinishYes()
+    {
+        reallyPanel.SetActive(false);
+        checkRewards();
+    }
+    
+    public void clickFinishNo()
+    {
+        reallyPanel.SetActive(false);
+    }
+
+    public void clickFinishBtn()
+    {
         if (numberOfLeft <= 0)
         {
-            failedCollectingWith("overTrial");
-            Time.timeScale = 0;
+            checkRewards();
+            return;
         }
 
-        StartCoroutine(rootProgressBar.Instance.moveProgressBarWith(playerValue));
+        if (numberOfLeft > 0)
+        {
+            reallyPanel.SetActive(true);
+        }
+    }
 
-        updateForTest();        
+    public void checkRewards()
+    {
+        if (totalPlayerValue == rootValue)
+        {
+            // 최고 보상
+            clearCollectionWith(1);
+            return;
+        }
+
+        if (totalPlayerValue <= rootValue + ((rootValue * 7) / 100) && totalPlayerValue >= rootValue - ((rootValue * 7) / 100))
+        {
+            // 2번째 보상
+            clearCollectionWith(2);
+            return;
+        }
+        
+        if (totalPlayerValue <= rootValue + ((rootValue * 12) / 100) && totalPlayerValue >= rootValue - ((rootValue * 12) / 100))
+        {
+            // 3번째 보상
+            clearCollectionWith(3);
+            return;
+        }
+        
+        endPanel.SetActive(true);
+        failedText.GetComponent<Text>().enabled = true;
+        failedText.GetComponent<Text>().text = "너무 얕게 팠어요!\n채집 실패!";
     }
     
     private void generatePlayerValueWith(string power)
@@ -74,33 +132,44 @@ public class collectRootManager : MonoBehaviour
                 playerValue = Random.Range(2, 10);
                 break;
             case "normal":
-                playerValue = Random.Range(13, 18);
+                playerValue = Random.Range(11, 20);
                 break;
             case "strong":
-                playerValue = Random.Range(22, 34);
+                playerValue = Random.Range(21, 32);
                 break;
         }
-        
     }
 
-    private void failedCollectingWith(string reason)
+    private void failedCollectingWithOverPower()
     {
-        switch (reason)
+        endPanel.SetActive(true);
+        Time.timeScale = 0;
+        failedText.GetComponent<Text>().enabled = true;
+        failedText.GetComponent<Text>().text = "이런! 뿌리가 손상되버렸어요!\n채집 실패!";
+    }
+
+    private void clearCollectionWith(int rank)
+    {
+        endPanel.SetActive(true);
+        Time.timeScale = 0;
+        failedText.GetComponent<Text>().enabled = true;
+        
+        switch (rank)
         {
-            case "overPower":
-                Debug.Log("overPower");
-                failedTextPower.GetComponent<Text>().enabled = true;
+            case 1:
+                failedText.GetComponent<Text>().text = "축하합니다!!\n1등!";
                 break;
-            case "overTrial":
-                Debug.Log("overTrial");
-                failedTextTrial.GetComponent<Text>().enabled = true;
+            case 2:
+                failedText.GetComponent<Text>().text = "축하합니다!!\n2등!";
+                break;
+            case 3:
+                failedText.GetComponent<Text>().text = "축하합니다!!\n3등!";
                 break;
         }
     }
 
     void updateForTest()
     {
-        updateNumberOfLeftText();
         updatePlayerValue();
         updateTotalPlayerValue();
     }
