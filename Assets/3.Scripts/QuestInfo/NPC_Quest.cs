@@ -21,5 +21,13 @@ public class NPC_Quest : MonoBehaviour
         {
             NPC[3].SetActive(true);
         }
+        if (PlayerPrefs.GetInt("Quest3").Equals(-1))
+        {
+            NPC[4].SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("Quest4").Equals(-1))
+        {
+            NPC[0].SetActive(true);
+        }
     }
 }

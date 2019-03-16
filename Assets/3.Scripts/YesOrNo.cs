@@ -61,7 +61,66 @@ public class YesOrNo : MonoBehaviour
                 }
             }
         }
+
+        if (QuestIndex.Equals(2) && SC.Length >= 2)
+        {
+            enoughIndex = 2;
+            for (int i = 0; i < SC.Length; i++)
+            {
+                if (SC[i].ItemID == 83 && SC[i].ItemCount >= 1)
+                {
+                    isItem[0] = true;
+                }
+                if (SC[i].ItemID == 139 && SC[i].ItemCount >= 1)
+                {
+                    isItem[1] = true;
+                }
+            }
+        }
+
+        if (QuestIndex.Equals(3) && SC.Length >= 3)
+        {
+            enoughIndex = 3;
+            for (int i = 0; i < SC.Length; i++)
+            {
+                if (SC[i].ItemID == 152 && SC[i].ItemCount >= 3)
+                {
+                    isItem[0] = true;
+                }
+                if (SC[i].ItemID == 178 && SC[i].ItemCount >= 3)
+                {
+                    isItem[1] = true;
+                }
+                if (SC[i].ItemID == 5 && SC[i].ItemCount >= 2)
+                {
+                    isItem[1] = true;
+                }
+            }
+        }
+        if (QuestIndex.Equals(4) && SC.Length >= 3)
+        {
+            enoughIndex = 3;
+            for (int i = 0; i < SC.Length; i++)
+            {
+                if (SC[i].ItemID == 103 && SC[i].ItemCount >= 5)
+                {
+                    isItem[0] = true;
+                }
+                if (SC[i].ItemID == 62 && SC[i].ItemCount >= 5)
+                {
+                    isItem[1] = true;
+                }
+                if (SC[i].ItemID == 16 && SC[i].ItemCount >= 10)
+                {
+                    isItem[1] = true;
+                }
+            }
+        }
         ///////////////////////////////////////////
+
+
+
+
         for (int i = 0; i < enoughIndex; i++)
         {
             if (isItem[i] == false)
@@ -86,6 +145,9 @@ public class YesOrNo : MonoBehaviour
         if (QuestIndex.Equals(0))
         {
             inv.decreseItem(163);
+            Gold = PlayerPrefs.GetInt("Gold");
+            Gold += 100;
+            PlayerPrefs.SetInt("Gold", Gold);
             PlayerPrefs.SetInt("Quest1", -1);
         }
 
@@ -97,7 +159,44 @@ public class YesOrNo : MonoBehaviour
             Gold = PlayerPrefs.GetInt("Gold");
             Gold += 400;
             PlayerPrefs.SetInt("Gold", Gold);
-            //PlayerPrefs.SetInt("QuestX",-1);
+        }
+        if (QuestIndex.Equals(2))
+        {
+            inv.decreseItem(83);
+            inv.decreseItem(139);
+            Gold = PlayerPrefs.GetInt("Gold");
+            Gold += 500;
+            PlayerPrefs.SetInt("Gold", Gold);
+        }
+        if (QuestIndex.Equals(3))
+        {
+            inv.decreseItem(152);
+            inv.decreseItem(152);
+            inv.decreseItem(152);
+            inv.decreseItem(178);
+            inv.decreseItem(178);
+            inv.decreseItem(178);
+            inv.decreseItem(5);
+            inv.decreseItem(5);
+            Gold = PlayerPrefs.GetInt("Gold");
+            Gold += 100;
+            PlayerPrefs.SetInt("Gold", Gold);
+        }
+        if (QuestIndex.Equals(4))
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                inv.decreseItem(103);
+                inv.decreseItem(62);
+                inv.decreseItem(16);
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                inv.decreseItem(16);
+            }
+            Gold = PlayerPrefs.GetInt("Gold");
+            Gold += 3000;
+            PlayerPrefs.SetInt("Gold", Gold);
         }
 
         //덥스용
@@ -132,11 +231,16 @@ public class YesOrNo : MonoBehaviour
         QuestName.text = "";
         QuestHuman.text = "";
         QuestDesc.text = "";
-        NQ.NPCCheck();
 
         if (QuestIndex.Equals(1))
         {
-            PlayerPrefs.SetInt("Quest2",-1);
+            PlayerPrefs.SetInt("Quest2", -1);
         }
+        else if (QuestIndex.Equals(2))
+        {
+            PlayerPrefs.SetInt("Quest3", -1);
+            PlayerPrefs.SetInt("Quest4", -1);
+        }
+        NQ.NPCCheck();
     }
 }

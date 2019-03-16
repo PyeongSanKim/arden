@@ -9930,7 +9930,7 @@ PrefabInstance:
     - target: {fileID: 1373224992616181195, guid: c79d5b79224c5b249a8c74363de8fb7f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1373224992616181199, guid: c79d5b79224c5b249a8c74363de8fb7f,
         type: 3}
@@ -11132,6 +11132,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341415871}
   m_CullTransparentMesh: 0
+--- !u!1 &342422227 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8560641086211308693, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2073774346}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &343472810
 GameObject:
   m_ObjectHideFlags: 0
@@ -13836,6 +13842,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 480961727}
   m_CullTransparentMesh: 0
+--- !u!1 &481428477 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8560641086211308693, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1920057874}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &483469310
 GameObject:
   m_ObjectHideFlags: 0
@@ -14960,7 +14972,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -33866,7 +33878,7 @@ MonoBehaviour:
     - "\uACE0\uB9D9\uB124. \uC0AC\uC6A9\uD574\uBCF4\uACE0 \uC9C0\uC18D\uC801\uC778
       \uB0A9\uD488\uB3C4 \uACE0\uB824\uD574 \uBCF4\uACA0\uB124. \uC774\uAC83\uC740
       \uBB3C\uD488 \uB300\uAE08\uC774\uB124."
-    - "- 000\uB2E4\uC778\uC744 \uC5BB\uC5C8\uC2B5\uB2C8\uB2E4. -"
+    - "- 500\uB2E4\uC778\uC744 \uC5BB\uC5C8\uC2B5\uB2C8\uB2E4. -"
     - "\uADF8\uAC74 \uADF8\uB807\uACE0 \uC5EC\uAE30\uC11C \uBB3C\uAC74\uC744 \uAD6C\uB9E4\uD558\uC790\uACE0
       \uD558\uC168\uB358 \uBD84\uC774 \u2018\uB610\u2019 \uC0AC\uB77C\uC9C0\uC168\uC73C\uB2C8...(\uAC71\uC815\uD558\uB294
       \uD45C\uC815)"
@@ -34004,7 +34016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AQindex: 2
-  QuestItem: {fileID: 1834638473}
+  QuestItem: {fileID: 651895285}
   AcceptQDT: {fileID: 1019560616}
   refuseQDT: {fileID: 1019560615}
   CompleteQDT: {fileID: 1019560614}
@@ -36431,126 +36443,154 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   QuestDig: 1
-  QuestIndex: 999
+  QuestIndex: 4
   MQ: {fileID: 9769516}
   dia:
     sprites:
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
     name:
     - 
     - 
-    - "\uB365\uC2A4"
     - 
-    - "\uB365\uC2A4"
-    - 
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
-    - 
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
-    - 
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
     - 
     - 
-    - "\uB365\uC2A4"
     - 
-    - "\uB365\uC2A4"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
     - 
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - 
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - 
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - 
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - 
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - 
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - 
     sentences:
-    - "\uAC00\uAC8C \uBB38 \uC55E\uC5D0 \uCEE4\uB2E4\uB780 \uADF8\uB9BC\uC790\uAC00
-      \uB4DC\uB9AC\uC6CC\uC84C\uB2E4."
-    - "\uAC70\uB300\uD55C \uBB34\uC5B8\uAC00\uAC00 \uBE44\uC881\uC740 \uBB38\uC744
-      \uC5B4\uB835\uC0AC\uB9AC \uD1B5\uACFC\uD574 \uAC00\uAC8C\uB85C \uB4E4\uC5B4\uC628\uB2E4."
-    - "\uADF8\uB3D9\uC548 \uC798 \uC9C0\uB0C8\uB294\uAC00?"
-    - "\uB2F9\uC2E0\uC758 \uC0C1\uC810\uC774 \uD37D\uC774\uB098 \uB9D8\uC5D0 \uB4E4\uC5C8\uB294\uC9C0,
-      \uB04A\uC784\uC5C6\uC774 \uCC3E\uC544\uC640 \uBB3C\uAC74\uC744 \uC8FC\uBB38\uD558\uB294
-      VIP \uC190\uB2D8, '\uB365\uC2A4'\uB2E4."
-    - "\uC774\uBC88 \uCD95\uC81C\uC5D0 \uAC01\uAD6D\uC758 \uC9C4\uADC0\uD55C \uBB3C\uAC74\uC744
-      \uAD6C\uACBD\uD560 \uAE30\uD68C\uAC00 \uC788\uB2E4 \uD574\uC11C \uD55C\uAC78\uC74C\uC5D0
-      \uB2EC\uB824\uC654\uB2E4\uB124."
-    - "\uADF8\uB294 \uD765\uBBF8\uB86D\uB2E4\uB294 \uB4EF\uC774 \uAC00\uAC8C \uC548\uC758
-      \uBB3C\uAC74\uB4E4\uC744 \uB458\uB7EC\uBCF4\uC558\uB2E4."
-    - "\uC608\uC804\uC5D0 \uC790\uB124\uAC00 \uAD6C\uD574\uC900 \uBB3C\uAC74\uC740
-      \uC815\uB9D0 \uB300\uB2E8\uD588\uC9C0."
-    - "\uC9C0\uAE08\uB3C4 \uC9C4\uC5F4\uC7A5\uC5D0 \uB193\uC5EC\uC788\uB294 \uADF8
-      \uB140\uC11D\uC744 \uBC14\uB77C\uBCFC \uB54C\uB9C8\uB2E4 \uBBF8\uC18C\uAC00
-      \uC808\uB85C \uC9C0\uC5B4\uC9C4\uB2E4\uB124."
-    - "\uC815\uB9D0 \uD798\uB4E4\uAC8C \uCC3E\uC544\uB2E4\uB2CC \uBB3C\uAC74\uC778\uB370,
-      \uC774\uB807\uAC8C \uB73B\uBC16\uC758 \uC7A5\uC18C\uC5D0\uC11C \uAD6C\uD558\uAC8C
-      \uB420 \uC904\uC740 \uBAB0\uB790\uC9C0."
-    - "\uC720\uB2A5\uD55C \uC0AC\uB78C\uC744 \uB9CC\uB098\uAC8C \uB418\uC5B4 \uAE30\uC058\uB2E4\uB124."
-    - "\uADF8\uB807\uAC8C \uB9D0\uD558\uACE4, \uB365\uC2A4\uB294 \uC721\uC911\uD55C
-      \uC190\uC73C\uB85C \uC637 \uC8FC\uBA38\uB2C8\uB97C \uB4A4\uC838 \uC791\uC740
-      \uC885\uC787\uC870\uAC01\uC744 \uC8FC\uC12C\uC8FC\uC12C \uAEBC\uB0B4\uBCF4\uC600\uB2E4."
-    - "\uADF8\uB798\uC11C-... \uC774\uBC88\uC5D0\uB3C4 \uC790\uB124\uC5D0\uAC8C \uB9E1\uAE30\uACE0\uD508
-      \uBB3C\uAC74\uC774 \uC0DD\uACBC\uC9C0"
-    - "\uC774\uAC74 \uC774\uBC88\uC5D0 \uC218\uC9D1\uD558\uB824\uACE0 \uC0DD\uAC01\uD558\uB294
-      \uBB3C\uAC74\uC774\uB77C\uB124."
-    - "\uB2F9\uC2E0\uC740 \uB365\uC2A4\uC5D0\uAC8C \uAC74\uB124\uBC1B\uC740 \uC885\uC774\uB97C
-      \uD3BC\uCCD0\uBCF4\uC558\uB2E4."
-    - "\uC774 \uBAA9\uAC78\uC774\uB294 \uC21C\uAE08\uC73C\uB85C\uB9CC \uC81C\uC791\uB418\uC5B4\uC57C
-      \uD558\uB124"
-    - "\uC544 \uADF8\uB9AC\uACE0 '\uD3EC\uD2B8'\uC5D0\uAC8C \uBB63 \uC880 \uB9CC\uB4E4\uC5B4
-      \uB2EC\uB77C\uACE0 \uD558\uB828\uB294\uB370"
-    - "\uC81C\uB828\uB41C \uAE08\uB3C4 \uCD94\uAC00\uB85C \uD544\uC694\uD560 \uAC83
-      \uAC19\uB124\uB9CC.\t"
-    - "\uADF8\uB807\uAC8C \uB9D0\uD558\uACE4 \uD2B9\uC720\uC758 \uB290\uAE0B\uD55C
-      \uD45C\uC815\uC73C\uB85C \uBBF8\uC18C\uC9C0\uC5C8\uB2E4."
-    - "\uBBF8\uC18C\uB97C \uBA38\uAE08\uC740 \uCC44, \uB9C8\uCE68 \uB208\uC5D0 \uB744\uC5C8\uB358
-      \uCE74\uC6B4\uD130 \uC55E\uC758 \uC758\uB8B0\uBAA9\uB85D\uC744 \uD6D1\uC5B4\uBCF4\uAE30
-      \uC2DC\uC791\uD588\uB2E4."
-    - "\uCD95\uC81C \uAE30\uAC04\uC774\uB77C\uC11C \uADF8\uB7F0\uC9C0 \uC77C\uAC70\uB9AC\uAC00
-      \uD48D\uB144\uC778\uAC00 \uBCF4\uAD70."
-    - "\uAC00\uBCCD\uAC8C \uC758\uB8B0\uBAA9\uB85D\uC744 \uB4A4\uC801\uC774\uB358
-      \uADF8\uC758 \uC190\uC774 \uC7A0\uC2DC \uB290\uB824\uC84C\uB2E4\uAC00 \uD55C
-      \uC7A5\uC758 \uC758\uB8B0\uC11C\uC5D0 \uADF8\uB824\uC9C4 \uC624\uB2C9\uC2A4\uB97C
-      \uBB18\uC0AC\uD55C \uADF8\uB9BC\uC5D0\uC11C \uC2DC\uC120\uC744 \uBA48\uCDC4\uB2E4."
-    - "\uC774\uAC74... \uC5B4\uB5A4 \uBB3C\uAC74\uC778\uAC00?"
-    - "\uB365\uC2A4\uAC00 \uB9E4\uB825\uC801\uC778 \uAC83\uC744 \uBC1C\uACAC\uD588\uC744
-      \uB54C\uC758 \uC57D\uAC04 \uACE0\uC870\uB41C \uBAA9\uC18C\uB9AC\uB85C \uC9C8\uBB38\uC744
-      \uB358\uC9C0\uC790, \uB2F9\uC2E0\uC740 \uAC00\uBCCD\uAC8C \uBBF8\uC18C\uC9D3\uACE4
-      \uC624\uB2C9\uC2A4\uC5D0 \uB300\uD574 \uC124\uBA85\uD574\uC8FC\uC5C8\uB2E4."
-    - "\uB9C8\uCE58 \uBE5B\uC744 \uBE68\uC544\uB4E4\uC774\uB294 \uB4EF\uD55C \uAC80\uC740\uC0C9
-      \uBCF4\uC11D\uC774\uB77C."
-    - "\uC740\uACFC \uD568\uAED8 \uC7A5\uC2E0\uAD6C\uB85C \uB9CC\uB4E4\uC5B4\uC9C0\uBA74
-      \uC815\uB9D0... \uC544\uB984\uB2F5\uACA0\uAD70."
-    - "\uD639\uC2DC \uADF8\uB7F0 \uBB3C\uAC74\uC744 \uAD6C\uD558\uAC8C \uB41C\uB2E4\uBA74,
-      \uC55E\uC11C \uB9D0\uD55C \uBB3C\uAC74\uB4E4\uACFC \uD568\uAED8 \uAC74\uB124\uC8FC\uAC8C."
-    - "\uC5B4\uB5A4\uAC00, \uB9E1\uC544\uC904 \uC218 \uC788\uACA0\uB294\uAC00?"
+    - "- \uB538\uB791\uB538\uB791 -\r\n"
+    - "\uBC16\uC5D0\uC11C \uCCA0\uCEE4\uB355 \uAC70\uB9AC\uB294 \uC18C\uB9AC\uAC00
+      \uBA87 \uBC88 \uB4E4\uB9AC\uB354\uB2C8, \uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544\uAC00
+      \uB4E4\uC5B4\uC654\uB2E4.\r\n"
+    - "\uADF8\uB140\uAC00 \uC785\uACE0 \uC788\uB294 \uAC11\uC637\uC740 \uC7AC\uC9C8\uC774
+      \uBB34\uC5C7\uC778\uC9C0 \uC54C \uC218 \uC5C6\uC9C0\uB9CC, \uD2B9\uC720\uC758
+      \uB9C8\uCC30\uC74C\uC744 \uAC00\uC9C0\uACE0 \uC788\uC5C8\uB2E4.\r\n"
+    - "\uADF8\uAC04 \uC798 \uC9C0\uB0C8\uB294\uAC00?\r\n"
+    - "\uADF8\uB140\uB294 \uB4E4\uC5B4\uC624\uC790\uB9C8\uC790 \uC740\uBE5B \uBA38\uB9AC\uCE74\uB77D\uC744
+      \uC4F8\uC5B4 \uB118\uAE30\uBA70 \uB2F9\uC2E0\uC5D0\uAC8C \uC778\uC0AC\uD588\uB2E4.\r"
+    - "\uB2F9\uC2E0\uC740 \uC815\uC911\uD788 \uACE0\uAC1C \uC219\uC5EC \uC778\uC0AC\uB97C
+      \uBC1B\uC558\uB2E4.\r"
+    - "\uC624\uB298\uC758 \uC138\uB9AC\uC544\uB294 \uD3C9\uC18C\uBCF4\uB2E4 \uC5BC\uAD74\uC774
+      \uB354 \uC9C4\uC9C0\uD574 \uBCF4\uC600\uB2E4.\r\n"
+    - "\uAE30\uC0AC\uB2E8 \uBB3C\uD488\uC774 \uB2E4 \uB5A8\uC5B4\uC838\uC11C \uC880
+      \uBCF4\uB7EC \uC654\uB124.\r\n"
+    - "\uAD6D\uC655\uAED8\uC120 \uC694\uC998 \uB4E4\uC5B4 \uBB34\uC5B8\uAC00 \uBB3C\uAC74\uC774
+      \uD544\uC694\uD558\uB2E4 \uD558\uBA74, \uC5B8\uC81C\uB098 \uC774 \uAC00\uAC8C\uB97C
+      \uCC3E\uC544\uAC00\uB77C \uD558\uC2E0\uB2E4\uB124.\r\n"
+    - "\uC815\uB9D0 \uADF8 \uC18D\uC744 \uC54C \uC218 \uC5C6\uB294 \uBD84\uC774\uC57C.\r\n"
+    - "\uADF8\uB798\uB3C4 \uC774 \uB9C8\uC744\uC5D0 \uB4E4\uB974\uBA74 \uC5B8\uC81C\uB098
+      \uB9C8\uC74C\uC774 \uD3B8\uC548\uD574\uC838\uC11C \uAE30\uBD84\uC774 \uC88B\uB124.\r\n"
+    - "\uADF8\uB140\uB294 \uC758\uC790\uC5D0 \uC549\uC544 \uAC11\uC8FC \uC774\uC74C\uC0C8\uB97C
+      \uB290\uC2A8\uD558\uAC8C \uD480\uC5C8\uB2E4.\r\n"
+    - "\uC624\uB798\uC804 \uB300\uB959\uC774 \uD558\uB098\uB85C \uD1B5\uD569\uB418\uC5B4
+      \uC788\uC744 \uB54C\uB9CC\uD07C\uC740 \uC544\uB2C8\uACA0\uC9C0\uB9CC...\r\n"
+    - "\uC911\uC559\uC9C0\uC5ED\uC744 \uD1B5\uD574 3\uAC1C\uAD6D\uC758 \uC0AC\uB78C\uB4E4\uC774
+      \uC11C\uB85C \uC790\uC720\uB86D\uAC8C \uC655\uB798\uD558\uB294 \uBAA8\uC2B5\uC774
+      \uBCF4\uAE30 \uC88B\uC544.\r\n"
+    - "\uC790\uC720\uB86D\uACE0 \uD3C9\uD654\uB85C\uC6B4 \uBD84\uC704\uAE30\uB97C
+      \uAC00\uC9C4 \uC9C0\uC5ED\uC774\uC57C.\r\n"
+    - "\uADF8\uB140\uB294 \uCE7C\uC9D1\uC744 \uD22D\uD22D \uAC74\uB4DC\uB9AC\uBA70
+      \uC7A0\uC2DC \uC0DD\uAC01\uC5D0 \uC7A0\uAE30\uB294\uB4EF\uD558\uB2E4\uAC00 \uB2E4\uC2DC
+      \uB9D0\uC744 \uC774\uC5B4\uAC14\uB2E4.\r\n"
+    - "\uB098\uB294 \uBA38\uC9C0\uC54A\uC544 \uAD6D\uACBD\uC774 \uC5C6\uC5B4\uC9C0\uACE0,
+      \uADF8 \uB204\uAD6C\uB3C4 \uAD70\uB9BC\uD558\uC9C0 \uC54A\uB294 \uC138\uC0C1\uC774
+      \uB2E4\uC2DC \uC62C \uAC83\uC774\uB77C \uBBFF\uB124.\r\n"
+    - "\uACFC\uAC70\uC5D0 \uBAA8\uB450\uAC00 \uD3C9\uB4F1\uD558\uAC8C \uD558\uB098\uC600\uC744
+      \uB54C\uCC98\uB7FC \uB9D0\uC774\uC9C0.\r\n"
+    - "\uAD6D\uC655 \uC544\uB798\uC11C \uAE30\uC0AC\uB2E8\uC744 \uD1B5\uC194\uD558\uB294
+      \uC704\uCE58\uC5D0 \uC788\uB294 \uC790\uB85C\uC11C\uB294 \uC758\uC678\uC758
+      \uB9D0\uC774\uC5C8\uB2E4.\r"
+    - "\uD558\uC9C0\uB9CC \uC774\uB97C \uC704\uD574 \uD574\uACB0\uD574\uC57C\uB9CC
+      \uD558\uB294 \uBB38\uC81C\uB4E4\uC774 \uB108\uBB34\uB098 \uB9CE\uB124.\r\n"
+    - "\uB300\uB959\uC740 \uC218\uB9CE\uC740 \uC804\uC7C1\uC758 \uACE0\uD1B5\uC744
+      \uACAA\uC5B4\uC654\uACE0, \uC138 \uACF3\uC73C\uB85C \uBD84\uB9AC\uB418\uC5B4
+      \uB108\uBB34\uB098 \uC624\uB79C \uC2DC\uAC04\uC774 \uD758\uB800\uC5B4. \r\n"
+    - "\uB2E8\uC21C\uD788 \uC815\uCE58\uB098 \uACBD\uC81C\uCCB4\uACC4\uAC00 \uD1B5\uD569\uB41C\uB2E4\uACE0
+      \uB418\uB294 \uAC83\uC774 \uC544\uB2C8\uC9C0...\r\n"
+    - "\uC5B4\uC81C\uB3C4 \uB300\uB959 \uD1B5\uD569\uC5D0 \uAD00\uD55C \uC548\uAC74\uC744
+      \uC62C\uB838\uB2E4\uAC00 \uC5EC\uAE30\uC800\uAE30\uC11C \uB300\uD310 \uAE68\uC9C0\uACE0
+      \uC654\uB124. \uD6C4\uD6D7...\r\n"
+    - "\uADF8\uB140\uB294 \uADFC\uB798\uC5D0 \uACE0\uBBFC\uD558\uB294 \uC8FC\uC81C\uAC00
+      \uC788\uC5B4 \uBCF4\uC600\uB2E4. \uB2F9\uC2E0\uC740 \uD558\uB358 \uC77C\uC744
+      \uBA48\uCD94\uACE0 \uC7A0\uC2DC \uC138\uB9AC\uC544\uC758 \uB9D0\uC744 \uB4E3\uACE0
+      \uC788\uC5C8\uB2E4.\r\n"
+    - "\uD558\uC9C0\uB9CC \uB300\uB959\uC740 \uC0AC\uC2E4\uC0C1 \uB2E4\uC2DC \uD558\uB098\uB85C
+      \uC774\uC5B4\uC838 \uC11C\uB85C \uC790\uC720\uB86D\uAC8C \uC655\uB798\uD558\uAE30
+      \uC2DC\uC791\uD588\uC5B4.\r\n"
+    - "\uAE30\uC220\uC801\uC778 \uBD80\uBD84\uACFC \uBB38\uD654\uC801\uC778 \uCC28\uC774\uAC00
+      \uD574\uACB0\uB41C\uB2E4\uBA74 \uD3C9\uB4F1\uD55C \uD1B5\uD569\uB3C4 \uB2E8\uC9C0
+      \uAFC8\uC740 \uC544\uB2D0\uC138.\r\n"
+    - "\uC138\uB9AC\uC544\uB294 \uBB3C\uB044\uB7EC\uBBF8 \uC790\uC2E0\uC744 \uCCD0\uB2E4\uBCF4\uB294
+      \uB2F9\uC2E0\uC744 \uC54C\uC544\uCC28\uB9B0 \uB4EF, \uB2E4\uC2DC \uC637\uC744
+      \uAC00\uB2E4\uB4EC\uC5B4 \uC785\uACE0 \uC790\uB9AC\uC5D0\uC11C \uC77C\uC5B4\uB0AC\uB2E4.\r\n"
+    - "...\uC544 \uBBF8\uC548\uD558\uB124, \uB0B4\uAC00 \uB9D0\uC774 \uB108\uBB34
+      \uB9CE\uC558\uAD70.\r\n"
+    - "\uADF8\uB140\uB294 \uACB8\uC5F0\uCA4D\uC740 \uD45C\uC815\uC744 \uC9C0\uC73C\uBA70
+      \uC8FC\uBB38\uC744 \uD588\uB2E4.\r\n"
+    - "\uAE30\uC0AC\uB2E8 \uD6C8\uB828\uC6A9\uD488\uB4E4\uC744 \uAD50\uCCB4\uD560
+      \uC2DC\uAE30\uAC00 \uB3FC\uC11C \uB9D0\uC774\uC9C0.\r\n"
+    - "\uBA87 \uAC00\uC9C0 \uD544\uC694\uD55C \uBB3C\uD488\uB4E4\uC744 \uC801\uC5B4\uC654\uB124.\r\n"
+    - "\uD2B9\uD788 \uD6C8\uB839\uC6A9 \uC778\uD615\uC740 \uC774\uBC88\uC5D0 \uC0C8\uB85C
+      \uB2E4\uC2DC \uAD6C\uC0C1\uD55C \uAC83\uC774\uB124.\r\n"
+    - "\uADF8\uB140\uB294 \uBA54\uBAA8\uD574\uB454 \uC885\uC774\uB97C \uAEBC\uB0B4\uC11C
+      \uB2F9\uC2E0\uC5D0\uAC8C \uBCF4\uC5EC\uC8FC\uC5C8\uB2E4.\r\n"
 --- !u!114 &1073247204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36564,100 +36604,96 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   QuestDig: 4
-  QuestIndex: 999
+  QuestIndex: 4
   MQ: {fileID: 9769516}
   dia:
     sprites:
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
     name:
     - 
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
     - 
-    - "\uB365\uC2A4"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
     - 
-    - 
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
-    - 
-    - 
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
     - 
     - 
     - 
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
     - 
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
     - 
     - 
-    - "<color=red>\uC2DC\uC2A4\uD15C</color>"
+    - 
+    - 
+    - 
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - 
+    - 
     sentences:
-    - "\uB365\uC2A4\uAC00 \uC758\uB8B0\uD55C \uBB3C\uAC74\uC744 \uBC1B\uC73C\uB7EC
-      \uAC00\uAC8C\uC5D0 \uB2E4\uC2DC \uB4E4\uB800\uB2E4."
-    - "\uADF8\uAC00 \uBB38\uC744 \uC5F4\uACE0 \uB4E4\uC5B4\uC624\uC790 \uADF8\uB9CC\uC758
-      \uD2B9\uC720\uC758 \uC704\uC555\uAC10\uC774 \uC0C1\uC810\uC744 \uAC00\uB4DD
-      \uCC44\uC6E0\uB2E4."
-    - "\uC800\uBC88\uC5D0 \uC758\uB8B0\uD55C \uBB3C\uAC74\uC740 \uBAA8\uB450 \uC900\uBE44\uB410\uB294\uAC00?"
-    - "\uB2F9\uC2E0\uC740 \uACE0\uAC1C\uB97C \uB044\uB355\uC774\uBA70 \uAE0D\uC815\uC744
-      \uD45C\uD558\uACE4 \uADF8\uC5D0\uAC8C \uBB3C\uAC74\uC744 \uAC74\uB0C8\uB2E4."
-    - "- \uB365\uC2A4\uC5D0\uAC8C \uD669\uAE08 \uB125\uD06C\uB9AC\uC2A4 x1, \uC81C\uB828\uB41C
-      \uAE08x3,  \uC624\uB2C9\uC2A4 \uBC18\uC9C0x1 \uC744(\uB97C) \uAC74\uB137\uC2B5\uB2C8\uB2E4."
-    - "\uACE0\uB9D9\uB124 \uC815\uB9D0 \uC544\uB984\uB2F5\uAD70."
-    - "\uC774\uAC83\uC774 \uC624\uB2C9\uC2A4\uBC18\uC9C0\uC778\uAC00.(\uAC10\uD0C4)"
-    - "\uAE30\uB300 \uC774\uC0C1\uC73C\uB85C \uB354\uC6B1 \uB9E4\uB825\uC801\uC778
-      \uB140\uC11D\uC774\uC57C."
-    - "\uC138\uB828\uB418\uACE0 \uB2E8\uC815\uD55C \uB9C8\uB2F4\uC758 \uBD84\uC704\uAE30\uB97C
-      \uD48D\uAE30\uB294 \uB3D9\uC2DC\uC5D0 \uACE0\uAE09\uC2A4\uB7EC\uC6B4 \uC6D0\uC219\uBBF8\uAE4C\uC9C0
-      \uB290\uAEF4\uC9C0\uB294\uAD70."
-    - "\uB9C8\uCE58... \uB098\uB97C \uC751\uC2DC\uD558\uB294 \uAC83 \uAC19\uC544."
-    - "\uB365\uC2A4\uB294 \uAE30\uD488 \uC788\uACE0 \uC12C\uC138\uD55C \uBB18\uC0AC\uB97C
-      \uBC49\uC5B4\uB0B4\uBA70 \uD568\uAED8 \uC870\uC2EC\uC2A4\uB7EC\uC6B4 \uC190\uAE38\uB85C
-      \uC7A5\uC2E0\uAD6C\uB97C \uC5B4\uB8E8\uB9CC\uC84C\uB2E4."
-    - "\uADF8\uC758 \uD589\uB3D9 \uD558\uB098\uD558\uB098\uC5D0\uC11C \uC544\uB984\uB2E4\uC6B4
-      \uC608\uC220\uD488\uC744 \uC0AC\uB791\uD558\uB294 \uBA74\uBAA8\uAC00 \uB3CB\uBCF4\uC600\uB2E4."
-    - "\uC5EC\uAE30 \uC62C \uB54C\uB294 \uC5B8\uC81C\uB098 \uC88B\uC740 \uBB3C\uAC74\uC744
-      \uAC00\uC838\uAC00\uB294\uAD70."
-    - "\uC5EC\uAE30 \uC57D\uC18D\uD55C \uBCF4\uC218\uC77C\uC138."
-    - "- 000 \uB2E4\uC778\uC744 \uC5BB\uC5C8\uC2B5\uB2C8\uB2E4. -"
-    - "\uADF8\uB294 \uD3C9\uC18C \uD45C\uC815 \uBCC0\uD654\uAC00 \uC801\uC740 \uC790\uC774\uC9C0\uB9CC,
-      \uC9C0\uAE08\uC740 \uD655\uC2E4\uD788 \uAE30\uBED0 \uBCF4\uC600\uB2E4."
-    - "\uBCF4\uC218\uB97C \uAC74\uB124\uACE0\uB3C4 \uC7A5\uC2E0\uAD6C\uC758 \uC544\uB984\uB2E4\uC6C0\uC5D0\uC11C
-      \uD5E4\uC5B4 \uB098\uC624\uC9C0 \uBABB\uD588\uB294\uC9C0, \uADF8\uC758 \uB208\uC740
-      \uC5EC\uC804\uD788 \uAC10\uC0C1\uC5D0 \uC816\uC5B4 \uC788\uC5C8\uB2E4."
-    - "\uADF8\uB9AC\uACE4 \uC774\uB0B4 \uADF8\uC73D\uD55C \uD45C\uC815\uC73C\uB85C
-      \uACE0\uAC1C\uB97C \uB4E4\uACE4 \uB2F9\uC2E0\uC744 \uBC14\uB77C\uBD24\uB2E4."
-    - "\uACE0\uB9D9\uB124. \uB09C \uC774\uB9CC \uC774\uB4E4\uACFC \uD568\uAED8\uD560
-      \uC2DC\uAC04\uC744 \uAC00\uC9C0\uB7EC \uAC00\uBCF4\uACA0\uB124."
-    - "\uADF8\uB7FC."
-    - "\uAC00\uBCCD\uAC8C \uCF54\uB97C \uB044\uB355\uC5EC \uC778\uC0AC\uB97C \uD55C
-      \uB4A4, \uADF8\uB294 \uC18C\uC911\uD558\uB2E4\uB294 \uB4EF\uC774 \uC7A5\uC2E0\uAD6C\uB97C
-      \uB4E4\uACE0 \uAC00\uAC8C\uB97C \uB098\uC130\uB2E4."
     - "- \uB538\uB791\uB538\uB791 -"
-    - "\uB365\uC2A4\uAC00 \uC77C\uBC18 \uC190\uB2D8\uC73C\uB85C \uB4F1\uC7A5\uD569\uB2C8\uB2E4."
+    - "\uD6C4\uC6B0... \uC5ED\uC2DC \uC27D\uC9C0 \uC54A\uC544.\r\n"
+    - "\uC57D\uAC04 \uD53C\uACE4\uD574 \uBCF4\uC774\uB294 \uC5BC\uAD74\uC758 \uC138\uB9AC\uC544\uAC00
+      \uAC00\uAC8C\uB85C \uB4E4\uC5B4\uC654\uB2E4.\r\n"
+    - "\uADF8\uBD84\uB4E4\uC744 \uC124\uB4DD\uD558\uAE30\uC5D0 \uB0B4 \uC758\uACAC\uC740
+      \uC544\uC9C1\uB3C4 \uB9CE\uC774 \uBD80\uC871\uD574.\r\n"
+    - "\uACF5\uBD80\uB97C \uC880 \uB354 \uD574\uC57C\uACA0\uC5B4.\r\n"
+    - "\uADF8\uB140\uB294 \uC7A0\uAE50 \uD63C\uC7A3\uB9D0\uC744 \uC911\uC5BC\uAC70\uB9AC\uB2E4
+      \uCE74\uC6B4\uD130\uB85C \uB2E4\uAC00\uC640 \uB2F9\uC2E0\uC5D0\uAC8C \uB9D0\uC744
+      \uAC78\uC5C8\uB2E4.\r\n"
+    - "\uBD80\uD0C1\uD588\uB358 \uD6C8\uB828\uC6A9\uD488\uB4E4\uC744 \uBC1B\uC73C\uB7EC
+      \uC654\uB124.\r\n"
+    - "\uB2F9\uC2E0\uC740 \uC815\uC911\uD788 \uBAA9\uB840\uB97C \uD558\uACE0 \uC900\uBE44\uD574\uB454
+      \uBB3C\uAC74\uB4E4\uC774 \uC788\uB294 \uCC3D\uACE0\uB85C \uC138\uB9AC\uC544\uB97C
+      \uC548\uB0B4\uD588\uB2E4.\r\n"
+    - "- \uC138\uB9AC\uC544\uC5D0\uAC8C \uC218\uB828\uC778\uD615\xD75, \uBAAC\uC2A4\uD130
+      \uC548\uC7A5\xD75, \uACE0\uAE09 \uCCB4\uB825\uD3EC\uC158\xD710\uC744 \uAC74\uB138\uC2B5\uB2C8\uB2E4.
+      -\r\n"
+    - "\uC138\uB9AC\uC544\uB294 \uC218\uB828\uC778\uD615 \uD55C \uAC1C\uB97C \uC190\uC73C\uB85C
+      \uC4F0\uB2E4\uB4EC\uC5B4 \uBCF4\uBA70 \uD761\uC871\uD55C \uD45C\uC815\uC744
+      \uC9C0\uC5C8\uB2E4.\r\n"
+    - "\uC5ED\uC2DC\uB098 \uB9CC\uC871\uC2A4\uB7F0 \uD488\uC9C8\uC774\uAD70.\r\n"
+    - "\uADF8\uB140\uB294 \uAC80\uC9D1\uC73C\uB85C \uC218\uB828\uC778\uD615\uC744
+      \uB450\uB4E4\uACA8 \uBCF4\uC558\uB2E4.\r\n"
+    - "\uB531 \uC88B\uC544!\r\n"
+    - "\uC774\uB7F0 \uC19C\uC528 \uC88B\uC740 \uC7A5\uC778\uC5D0\uAC90 \uC6C3\uB3C8\uC744
+      \uC5B9\uC5B4\uC918\uB3C4 \uC190\uD574\uAC00 \uC544\uB2C8\uC9C0.\r\n"
+    - "- 3000\uB2E4\uC778\uC744 \uC5BB\uC5C8\uC2B5\uB2C8\uB2E4. -\r\n"
+    - "\uC138\uB9AC\uC544\uB294 \uBC16\uC5D0\uC11C \uB300\uAE30 \uC911\uC774\uB358
+      \uAE30\uC0AC\uB4E4\uACFC \uD568\uAED8 \uBB3C\uAC74\uB4E4\uC744 \uC62E\uACA8
+      \uC2E4\uC5C8\uB2E4.\r"
+    - "\uB355\uBD84\uC5D0 \uD55C \uB3D9\uC548\uC740 \uAC71\uC815 \uC5C6\uC774 \uC774
+      \uCE5C\uAD6C\uB4E4\uC744 \uAD74\uB9B4 \uC218 \uC788\uACA0\uC5B4.\r\n"
+    - "\uC21C\uAC04 \uAE30\uC0AC\uB4E4\uC758 \uC5BC\uAD74\uC774 \uC5B4\uB450\uC6CC\uC84C\uB2E4.\r\n"
+    - "\uBC18\uBA74 \uC138\uB9AC\uC544\uC758 \uD45C\uC815\uC740 \uB9E4\uC6B0 \uBC1D\uC544
+      \uBCF4\uC600\uB2E4.\r\n"
+    - "\uD544\uC694\uD55C \uAC83\uC774 \uC0DD\uAE30\uBA74 \uB610 \uB4E4\uB974\uACA0\uB124!
+      \uD558\uD558\uD558!\r\n"
+    - "- \uB538\uB791\uB538\uB791 -"
+    - "\uADF8\uB140\uB294 \uC5ED\uC2DC \uD0C0\uACE0\uB09C \uAE30\uC0AC\uC600\uB2E4.\r\n"
 --- !u!114 &1073247205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36671,32 +36707,55 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   QuestDig: 3
-  QuestIndex: 999
+  QuestIndex: 4
   MQ: {fileID: 9769516}
   dia:
     sprites:
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
     name:
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
     - 
-    - "<color=red>\uC2DC\uC2A4\uD15C</color>"
+    - 
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - 
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - 
+    - 
+    - 
     sentences:
-    - "\uC5ED\uC2DC \uC790\uB124\uB77C\uACE0 \uD574\uB3C4 \uC774 \uB140\uC11D\uB4E4\uC744
-      \uAD6C\uD574\uC8FC\uAE34 \uD798\uB4E0\uAC00 \uBCF4\uAD70."
-    - "\uAD1C\uCC2E\uB124, \uCD95\uC81C\uB85C \uC778\uD574 \uB9CE\uC774 \uBC14\uC060
-      \uD130"
-    - "\uCD95\uC81C \uC774\uD6C4\uC5D0 \uB2E4\uB978 \uBB3C\uAC74\uC774 \uC0DD\uAC01\uB098\uBA74
-      \uC758\uB8B0\uD558\uB7EC \uB610 \uC624\uACA0\uB124."
-    - "\uADF8\uB294 \uC18D\uB0B4\uB97C \uC54C \uC218 \uC5C6\uB294 \uB290\uAE0B\uD55C
-      \uD45C\uC815\uC73C\uB85C \uB2F9\uC2E0\uC744 \uBC14\uB77C\uBCF4\uB2E4\uAC00,
-      \uC870\uC6A9\uD788 \uBB38\uC73C\uB85C \uAC78\uC74C\uC744 \uC62E\uACBC\uB2E4."
-    - "\uB365\uC2A4\uAC00 \uC77C\uBC18 \uC190\uB2D8\uC73C\uB85C \uB4F1\uC7A5\uD569\uB2C8\uB2E4."
+    - "\uB2F9\uC2E0\uC740 \uC88B\uC740 \uBAA9\uC7AC\uAC00 \uBD80\uC871\uD558\uC5EC
+      \uBB3C\uB7C9\uC744 \uCC44\uC6CC\uC8FC\uC9C0 \uBABB\uD560 \uAC83 \uAC19\uB2E4\uACE0
+      \uB9D0\uD588\uB2E4.\r\n"
+    - "\uC74C... \uC7AC\uB8CC\uC5D0 \uC2E0\uACBD\uC744 \uB9CE\uC774 \uC4F0\uB098 \uBCF4\uAD70.\r\n"
+    - "\uC5EC\uAE30 \uAE30\uC7AC\uB41C \uAC83 \uC774\uC678\uC5D0 \uB2E4\uB978 \uB098\uBB34\uB4E4\uC744
+      \uC11E\uC5B4 \uD569\uD310\uC744 \uB9CC\uB4E4\uC5B4 \uC0AC\uC6A9\uD574\uB3C4
+      \uC0C1\uAD00\uC740 \uC5C6\uB124\uB9CC?\r\n"
+    - "\uB2F9\uC2E0\uC740 \uBC14\uB85C \uACE0\uAC1C\uB97C \uAC00\uB85C\uC800\uC5C8\uB2E4.\r\n"
+    - "\uC644\uAC15\uD558\uAD70\uADF8\uB798. \uD6C4\uD6D7\r\n"
+    - "\uADF8\uB798\uC11C \uB354\uC6B1 \uBBFF\uC74C\uC9C1\uD574.\r\n"
+    - "\uC138\uB9AC\uC544\uB294 \uC6C3\uC73C\uBA74\uC11C \uB2F9\uC2E0\uC5D0\uAC8C
+      \uC778\uC0AC\uB97C \uAC74\uB138\uB2E4.\r\n"
+    - "\uADF8\uB807\uB2E4\uBA74 \uC5B4\uCA54 \uC218 \uC5C6\uC9C0.\r\n"
+    - "\uB2E4\uC74C\uC5D0 \uAE30\uD68C\uAC00 \uC788\uB2E4\uBA74 \uB610 \uB4E4\uB974\uACA0\uB124.\r\n"
+    - "- \uB538\uB791\uB538\uB791 -\r\n"
+    - "\uC138\uB9AC\uC544\uB294 \uBC16\uC73C\uB85C \uB098\uAC00\uBA74\uC11C \uB610\uB2E4\uC2DC
+      \uC0DD\uAC01\uC5D0 \uC7A0\uAE34 \uBAA8\uC2B5\uC774\uC5C8\uB2E4.\r\n"
+    - "\uADF8\uB140\uB294 \uB3C4\uB300\uCCB4 \uBB34\uC2A8 \uACE0\uBBFC\uC744 \uD558\uACE0
+      \uC788\uC5C8\uB358 \uAC83\uC77C\uAE4C?\r\n"
 --- !u!114 &1073247206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36710,32 +36769,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   QuestDig: 2
-  QuestIndex: 999
+  QuestIndex: 4
   MQ: {fileID: 9769516}
   dia:
     sprites:
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
     name:
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
+    - "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544"
     - 
-    - "\uB365\uC2A4"
     - 
     - 
     sentences:
-    - "\uC774\uBC88\uC5D0\uB3C4 \uC798 \uBD80\uD0C1\uD558\uC9C0."
-    - "\uC774\uAC74 \uCC29\uC218\uAE08\uC774\uB124."
-    - "- 000\uB2E4\uC778\uC744 \uC5BB\uC5C8\uC2B5\uB2C8\uB2E4.-"
-    - "\uC88B\uC740 \uBB3C\uAC74\uC744 \uAE30\uB300\uD558\uACE0 \uC788\uACA0\uB124."
-    - "\uADF8\uB294 \uC5EC\uC804\uD788 \uB290\uAE0B\uD55C \uBBF8\uC18C\uB85C \uB2F9\uC2E0\uC744
-      \uBC14\uB77C\uBCF4\uB2E4\uAC00, \uC870\uC6A9\uD788 \uBB38\uC73C\uB85C \uAC78\uC74C\uC744
-      \uC62E\uACBC\uB2E4."
+    - "\uC9C0\uAE08\uAE4C\uC9C0 \uBD10\uC628 \uC19C\uC528\uAC00 \uC788\uB294 \uB9CC\uD07C
+      \uC798 \uD574\uC904 \uAC83\uC774\uB77C \uBBFF\uB124.\r\n"
+    - "\uB098\uB294 \uAD6D\uC655\uAED8 \uBCF4\uC5EC\uB4DC\uB9B4 \uC11C\uB958\uB97C
+      \uC624\uB298\uAE4C\uC9C0 \uC791\uC131\uD574\uC57C \uD558\uB2C8 \uBC14\uB85C
+      \uAC00\uBCF4\uACA0\uB124.\r\n"
+    - "\uC138\uB9AC\uC544\uB294 \uB2E4\uC2DC \uC0DD\uAC01\uC5D0 \uC7A0\uAE30\uBA70
+      \uAC00\uAC8C\uB97C \uB098\uC130\uB2E4.\r\n"
     - "- \uB538\uB791\uB538\uB791 -"
+    - "\uADF8\uB140\uB294 \uB3C4\uB300\uCCB4 \uBB34\uC2A8 \uACE0\uBBFC\uC744 \uD558\uACE0
+      \uC788\uC5C8\uB358 \uAC83\uC77C\uAE4C?\r\n"
 --- !u!114 &1073247207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36748,8 +36807,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7df4657dc52a1394ea922f65255fed04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AQindex: 999
-  QuestItem: {fileID: 651895285}
+  AQindex: 4
+  QuestItem: {fileID: 481428477}
   AcceptQDT: {fileID: 1073247206}
   refuseQDT: {fileID: 1073247205}
   CompleteQDT: {fileID: 1073247204}
@@ -38324,7 +38383,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1046, y: -263}
+  m_AnchoredPosition: {x: -639, y: -263}
   m_SizeDelta: {x: 666, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1111481420
@@ -39312,6 +39371,8 @@ RectTransform:
   - {fileID: 1527355507261705059}
   - {fileID: 1471857001}
   - {fileID: 651895284}
+  - {fileID: 2073774347}
+  - {fileID: 1920057875}
   - {fileID: 1820733977}
   m_Father: {fileID: 447737633}
   m_RootOrder: 1
@@ -44111,7 +44172,7 @@ MonoBehaviour:
     - "\uC5EC\uAE30 \uC62C \uB54C\uB294 \uC5B8\uC81C\uB098 \uC88B\uC740 \uBB3C\uAC74\uC744
       \uAC00\uC838\uAC00\uB294\uAD70."
     - "\uC5EC\uAE30 \uC57D\uC18D\uD55C \uBCF4\uC218\uC77C\uC138."
-    - "- 000 \uB2E4\uC778\uC744 \uC5BB\uC5C8\uC2B5\uB2C8\uB2E4. -"
+    - "- 500 \uB2E4\uC778\uC744 \uC5BB\uC5C8\uC2B5\uB2C8\uB2E4. -"
     - "\uADF8\uB294 \uD3C9\uC18C \uD45C\uC815 \uBCC0\uD654\uAC00 \uC801\uC740 \uC790\uC774\uC9C0\uB9CC,
       \uC9C0\uAE08\uC740 \uD655\uC2E4\uD788 \uAE30\uBED0 \uBCF4\uC600\uB2E4."
     - "\uBCF4\uC218\uB97C \uAC74\uB124\uACE0\uB3C4 \uC7A5\uC2E0\uAD6C\uC758 \uC544\uB984\uB2E4\uC6C0\uC5D0\uC11C
@@ -48874,7 +48935,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 5232169c9aa51044598b0ffef32fad18, type: 3}
-    m_FontSize: 50
+    m_FontSize: 43
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 3
@@ -59643,7 +59704,7 @@ PrefabInstance:
     - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
         type: 3}
@@ -59954,7 +60015,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -618.5, y: -302}
+  m_AnchoredPosition: {x: -437, y: -331}
   m_SizeDelta: {x: 1337, y: 2048}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1823849070
@@ -60003,7 +60064,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -62043,6 +62104,193 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1914617847}
   m_CullTransparentMesh: 0
+--- !u!1001 &1920057874
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1138050587}
+    m_Modifications:
+    - target: {fileID: 8560641086211308693, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_Name
+      value: Quest4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -220.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308703, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: RightQuestPan
+      value: 
+      objectReference: {fileID: 1331083408}
+    - target: {fileID: 8560641086211308703, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: QuestName
+      value: 
+      objectReference: {fileID: 1421621628}
+    - target: {fileID: 8560641086211308703, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: QuestHuman
+      value: 
+      objectReference: {fileID: 656022179}
+    - target: {fileID: 8560641086211308703, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: QuestDesc
+      value: 
+      objectReference: {fileID: 1903590748}
+    - target: {fileID: 8560641086211308703, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: YON
+      value: 
+      objectReference: {fileID: 249992135}
+    - target: {fileID: 8560641086211308691, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: QuestData.result
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308691, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: QuestData.Index
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308691, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: QuestData.name
+      value: "\uACE0\uBBFC\uB420 \uB550 \uD6C8\uB828\uC744"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308691, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: QuestData.human
+      value: "\uC138\uB9AC\uC544"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308691, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: QuestData.desc
+      value: "\uAE30\uC0AC\uB2E8\uC7A5 \uC138\uB9AC\uC544\uC5D0\uAC8C \uC628 \uC758\uB8B0\n[\uC218\uB828\uC778\uD615]x5,
+        [\uBAAC\uC2A4\uD130 \uC548\uC7A5]x5 ,[\uACE0\uAE09 \uCCB4\uB825\uD3EC\uC158]x10
+        \uB97C \n\uAD6C\uD574\uB2E4 \uC8FC\uC790."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641085658919615, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_Text
+      value: "\uACE0\uBBFC\uB420 \uB550 \uD6C8\uB828\uC744"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641085658919615, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 26
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9cadbc10150948547b0a5e5b058c7b2a, type: 3}
+--- !u!224 &1920057875 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1920057874}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1921221726
 GameObject:
   m_ObjectHideFlags: 0
@@ -62943,126 +63191,87 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   QuestDig: 1
-  QuestIndex: 999
+  QuestIndex: 3
   MQ: {fileID: 9769516}
   dia:
     sprites:
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
     name:
     - 
     - 
-    - "\uB365\uC2A4"
     - 
-    - "\uB365\uC2A4"
+    - ???
     - 
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
+    - ???
+    - ???
     - 
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
+    - ???
+    - ???
+    - ???
+    - ???
+    - ???
+    - ???
+    - ???
+    - ???
     - 
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
-    - 
-    - 
-    - "\uB365\uC2A4"
-    - 
-    - "\uB365\uC2A4"
-    - 
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
+    - "\uCE74\uB098\uB9AC\uC544"
     sentences:
-    - "\uAC00\uAC8C \uBB38 \uC55E\uC5D0 \uCEE4\uB2E4\uB780 \uADF8\uB9BC\uC790\uAC00
-      \uB4DC\uB9AC\uC6CC\uC84C\uB2E4."
-    - "\uAC70\uB300\uD55C \uBB34\uC5B8\uAC00\uAC00 \uBE44\uC881\uC740 \uBB38\uC744
-      \uC5B4\uB835\uC0AC\uB9AC \uD1B5\uACFC\uD574 \uAC00\uAC8C\uB85C \uB4E4\uC5B4\uC628\uB2E4."
-    - "\uADF8\uB3D9\uC548 \uC798 \uC9C0\uB0C8\uB294\uAC00?"
-    - "\uB2F9\uC2E0\uC758 \uC0C1\uC810\uC774 \uD37D\uC774\uB098 \uB9D8\uC5D0 \uB4E4\uC5C8\uB294\uC9C0,
-      \uB04A\uC784\uC5C6\uC774 \uCC3E\uC544\uC640 \uBB3C\uAC74\uC744 \uC8FC\uBB38\uD558\uB294
-      VIP \uC190\uB2D8, '\uB365\uC2A4'\uB2E4."
-    - "\uC774\uBC88 \uCD95\uC81C\uC5D0 \uAC01\uAD6D\uC758 \uC9C4\uADC0\uD55C \uBB3C\uAC74\uC744
-      \uAD6C\uACBD\uD560 \uAE30\uD68C\uAC00 \uC788\uB2E4 \uD574\uC11C \uD55C\uAC78\uC74C\uC5D0
-      \uB2EC\uB824\uC654\uB2E4\uB124."
-    - "\uADF8\uB294 \uD765\uBBF8\uB86D\uB2E4\uB294 \uB4EF\uC774 \uAC00\uAC8C \uC548\uC758
-      \uBB3C\uAC74\uB4E4\uC744 \uB458\uB7EC\uBCF4\uC558\uB2E4."
-    - "\uC608\uC804\uC5D0 \uC790\uB124\uAC00 \uAD6C\uD574\uC900 \uBB3C\uAC74\uC740
-      \uC815\uB9D0 \uB300\uB2E8\uD588\uC9C0."
-    - "\uC9C0\uAE08\uB3C4 \uC9C4\uC5F4\uC7A5\uC5D0 \uB193\uC5EC\uC788\uB294 \uADF8
-      \uB140\uC11D\uC744 \uBC14\uB77C\uBCFC \uB54C\uB9C8\uB2E4 \uBBF8\uC18C\uAC00
-      \uC808\uB85C \uC9C0\uC5B4\uC9C4\uB2E4\uB124."
-    - "\uC815\uB9D0 \uD798\uB4E4\uAC8C \uCC3E\uC544\uB2E4\uB2CC \uBB3C\uAC74\uC778\uB370,
-      \uC774\uB807\uAC8C \uB73B\uBC16\uC758 \uC7A5\uC18C\uC5D0\uC11C \uAD6C\uD558\uAC8C
-      \uB420 \uC904\uC740 \uBAB0\uB790\uC9C0."
-    - "\uC720\uB2A5\uD55C \uC0AC\uB78C\uC744 \uB9CC\uB098\uAC8C \uB418\uC5B4 \uAE30\uC058\uB2E4\uB124."
-    - "\uADF8\uB807\uAC8C \uB9D0\uD558\uACE4, \uB365\uC2A4\uB294 \uC721\uC911\uD55C
-      \uC190\uC73C\uB85C \uC637 \uC8FC\uBA38\uB2C8\uB97C \uB4A4\uC838 \uC791\uC740
-      \uC885\uC787\uC870\uAC01\uC744 \uC8FC\uC12C\uC8FC\uC12C \uAEBC\uB0B4\uBCF4\uC600\uB2E4."
-    - "\uADF8\uB798\uC11C-... \uC774\uBC88\uC5D0\uB3C4 \uC790\uB124\uC5D0\uAC8C \uB9E1\uAE30\uACE0\uD508
-      \uBB3C\uAC74\uC774 \uC0DD\uACBC\uC9C0"
-    - "\uC774\uAC74 \uC774\uBC88\uC5D0 \uC218\uC9D1\uD558\uB824\uACE0 \uC0DD\uAC01\uD558\uB294
-      \uBB3C\uAC74\uC774\uB77C\uB124."
-    - "\uB2F9\uC2E0\uC740 \uB365\uC2A4\uC5D0\uAC8C \uAC74\uB124\uBC1B\uC740 \uC885\uC774\uB97C
-      \uD3BC\uCCD0\uBCF4\uC558\uB2E4."
-    - "\uC774 \uBAA9\uAC78\uC774\uB294 \uC21C\uAE08\uC73C\uB85C\uB9CC \uC81C\uC791\uB418\uC5B4\uC57C
-      \uD558\uB124"
-    - "\uC544 \uADF8\uB9AC\uACE0 '\uD3EC\uD2B8'\uC5D0\uAC8C \uBB63 \uC880 \uB9CC\uB4E4\uC5B4
-      \uB2EC\uB77C\uACE0 \uD558\uB828\uB294\uB370"
-    - "\uC81C\uB828\uB41C \uAE08\uB3C4 \uCD94\uAC00\uB85C \uD544\uC694\uD560 \uAC83
-      \uAC19\uB124\uB9CC.\t"
-    - "\uADF8\uB807\uAC8C \uB9D0\uD558\uACE4 \uD2B9\uC720\uC758 \uB290\uAE0B\uD55C
-      \uD45C\uC815\uC73C\uB85C \uBBF8\uC18C\uC9C0\uC5C8\uB2E4."
-    - "\uBBF8\uC18C\uB97C \uBA38\uAE08\uC740 \uCC44, \uB9C8\uCE68 \uB208\uC5D0 \uB744\uC5C8\uB358
-      \uCE74\uC6B4\uD130 \uC55E\uC758 \uC758\uB8B0\uBAA9\uB85D\uC744 \uD6D1\uC5B4\uBCF4\uAE30
-      \uC2DC\uC791\uD588\uB2E4."
-    - "\uCD95\uC81C \uAE30\uAC04\uC774\uB77C\uC11C \uADF8\uB7F0\uC9C0 \uC77C\uAC70\uB9AC\uAC00
-      \uD48D\uB144\uC778\uAC00 \uBCF4\uAD70."
-    - "\uAC00\uBCCD\uAC8C \uC758\uB8B0\uBAA9\uB85D\uC744 \uB4A4\uC801\uC774\uB358
-      \uADF8\uC758 \uC190\uC774 \uC7A0\uC2DC \uB290\uB824\uC84C\uB2E4\uAC00 \uD55C
-      \uC7A5\uC758 \uC758\uB8B0\uC11C\uC5D0 \uADF8\uB824\uC9C4 \uC624\uB2C9\uC2A4\uB97C
-      \uBB18\uC0AC\uD55C \uADF8\uB9BC\uC5D0\uC11C \uC2DC\uC120\uC744 \uBA48\uCDC4\uB2E4."
-    - "\uC774\uAC74... \uC5B4\uB5A4 \uBB3C\uAC74\uC778\uAC00?"
-    - "\uB365\uC2A4\uAC00 \uB9E4\uB825\uC801\uC778 \uAC83\uC744 \uBC1C\uACAC\uD588\uC744
-      \uB54C\uC758 \uC57D\uAC04 \uACE0\uC870\uB41C \uBAA9\uC18C\uB9AC\uB85C \uC9C8\uBB38\uC744
-      \uB358\uC9C0\uC790, \uB2F9\uC2E0\uC740 \uAC00\uBCCD\uAC8C \uBBF8\uC18C\uC9D3\uACE4
-      \uC624\uB2C9\uC2A4\uC5D0 \uB300\uD574 \uC124\uBA85\uD574\uC8FC\uC5C8\uB2E4."
-    - "\uB9C8\uCE58 \uBE5B\uC744 \uBE68\uC544\uB4E4\uC774\uB294 \uB4EF\uD55C \uAC80\uC740\uC0C9
-      \uBCF4\uC11D\uC774\uB77C."
-    - "\uC740\uACFC \uD568\uAED8 \uC7A5\uC2E0\uAD6C\uB85C \uB9CC\uB4E4\uC5B4\uC9C0\uBA74
-      \uC815\uB9D0... \uC544\uB984\uB2F5\uACA0\uAD70."
-    - "\uD639\uC2DC \uADF8\uB7F0 \uBB3C\uAC74\uC744 \uAD6C\uD558\uAC8C \uB41C\uB2E4\uBA74,
-      \uC55E\uC11C \uB9D0\uD55C \uBB3C\uAC74\uB4E4\uACFC \uD568\uAED8 \uAC74\uB124\uC8FC\uAC8C."
-    - "\uC5B4\uB5A4\uAC00, \uB9E1\uC544\uC904 \uC218 \uC788\uACA0\uB294\uAC00?"
+    - "- \uB538\uB791\uB538\uB791 \uBCF4\uB2E4 \uACFC\uACA9\uD55C \uC18C\uB9AC -"
+    - "\uAC00\uAC8C \uBB38\uC744 \uBC15\uC0B4 \uB0B4\uB4EF\uC774 \uC5F4\uC5B4\uC816\uD788\uBA70
+      \uACE0\uC591\uC774 \uC218\uC778 \uD55C \uBA85\uC774 \uAC00\uAC8C \uC548\uC73C\uB85C
+      \uB09C\uC785\uD588\uB2E4. "
+    - "\uADF8\uB294 \uB2F9\uC2E0\uC744 \uBCF4\uB354\uB2C8 \uACE7\uBC14\uB85C \uB2EC\uB824\uC640
+      \uCE74\uC6B4\uD130\uB97C \uB0B4\uB9AC\uCE58\uBA70 \uD55C \uB2E8\uC5B4\uB97C
+      \uBC49\uC5C8\uB2E4.\r\n"
+    - "\uD3ED\uD0C4!!\r\n"
+    - "\uC5B4\uC548\uC774 \uBC99\uBC99\uD55C \uB2F9\uC2E0\uC744 \uBC14\uB77C\uBCF4\uBA70
+      \uADF8\uB294 \uC774\uD574\uD560 \uC218 \uC5C6\uB2E4\uB294 \uD45C\uC815\uC744
+      \uC9C0\uC73C\uBA70 \uB9D0\uC744 \uC774\uC5B4\uAC14\uB2E4.\r\n"
+    - "\uD3ED\uD0C4 \uB9D0\uC774\uC57C. \uD3ED\uD0C4! \uB098\uB294 \uC9C0\uAE08 \uC774
+      \uAC00\uAC8C\uB97C \uB0A0\uB824\uBC84\uB9B4 \uC218 \uC788\uC744 \uB9CC\uD07C\uC758
+      \uC8FD\uC5EC\uC8FC\uB294 \uBB3C\uAC74\uC744 \uC6D0\uD55C\uB2E4\uACE0.\r\n"
+    - "\uC774\uD574 \uBABB \uD558\uACA0\uC5B4? \uC559?\r\n"
+    - "\uADF8\uB294 \uD2B9\uC720\uC758 \uAD11\uAE30 \uC5B4\uB9B0 \uC5BC\uAD74\uC744
+      \uCF54\uC55E\uAE4C\uC9C0 \uB4E4\uC774\uB300\uBA74\uC11C \uC529\uC529\uAC70\uB9AC\uB354\uB2C8
+      \uD3ED\uD0C4\uC744 \uCC2C\uC591\uD558\uAE30 \uC2DC\uC791\uD588\uB2E4.\r\n"
+    - "\uB108\uB294 \uC774 \uC138\uC0C1\uC774 \uD3ED\uB825\uC774 \uC5C6\uC774 \uC874\uC7AC\uD560
+      \uC218 \uC788\uB2E4\uACE0 \uC0DD\uAC01\uD574?\r\n"
+    - "\uC544\uB2C8\uC57C, \uBE5B\uC774 \uC788\uC73C\uBA74 \uD56D\uC0C1 \uC5B4\uB460\uC774
+      \uC788\uB294 \uBC95\uC774\uC9C0.\r\n"
+    - "\uD558\uC9C0\uB9CC \uC5B4\uB460\uC774 \uC788\uC73C\uB824\uBA74 \uBE5B \uB530\uC708
+      \uD544\uC694\uD558\uC9C0 \uC54A\uC544\r\n"
+    - "\uADF8\uB7F0 \uC758\uBBF8\uC5D0\uC11C \uD3C9\uD654 \uC18D\uC5D0\uC11C\uC758
+      \uD3ED\uB825\uC740 \uB354 \uB3CB\uBCF4\uC774\uB294 \uBC95\uC774\uC57C.\r\n"
+    - "\uB54C\uBB38\uC5D0, \uB098\uB294 \uBAA8\uB450\uAC00 \uD3C9\uD654\uB85C\uC6B4
+      \uC2DC\uAE30\uC5D0 \uB098\uB294 \uBAA8\uB450\uC5D0\uAC8C \uD3ED\uB825\uC744
+      \uC804\uD558\uB294 \uC0AC\uB3C4\uAC00 \uB418\uC5C8\uC9C0.\r\n"
+    - "\uADF8\uB9AC\uACE0 \uD3ED\uB825\uC744 \uC804\uD558\uB294 \uAC00\uC7A5 \uBA4B\uC9C4
+      \uBC29\uBC95\uC740 \uBC14\uB85C \uD3ED\uBC1C\uC774\uC57C!\r\n"
+    - "\uADF9\uB3C4\uB85C \uCC2C\uB780\uD558\uACE0 \uC18C\uB984 \uB07C\uCE58\uB9AC\uB9CC\uD07C
+      \uC6C5\uC7A5\uD55C \uD3ED\uBC1C \uB9D0\uC774\uC57C!!\r\n"
+    - "\uB0D0\uC544\uD558\uD558\uD558\uD558!"
+    - "\uB2F9\uC2E0\uC740 \uC804\uC2E0\uC5D0 \uC2DD\uC740\uB540\uC774 \uD750\uB974\uB294
+      \uAC83\uC774 \uB290\uAEF4\uC84C\uB2E4. \uC774 \uC0AC\uB78C\uC740 \uD655\uC2E4\uD788
+      \uC81C\uC815\uC2E0\uC774 \uC544\uB2C8\uC5C8\uB2E4.\r\n"
+    - "\uC790 \uC5B4\uC11C \uC774 \uCE74\uB098\uB9AC\uC544\uB2D8\uC5D0\uAC8C \uC601\uB871\uD55C
+      \uD3ED\uD0C4\uC744 \uBCF4\uC5EC\uC918.\r\n"
 --- !u!114 &1971287102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63076,100 +63285,91 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   QuestDig: 4
-  QuestIndex: 999
+  QuestIndex: 3
   MQ: {fileID: 9769516}
   dia:
     sprites:
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
     name:
     - 
     - 
-    - "\uB365\uC2A4"
+    - 
+    - "\uCE74\uB098\uB9AC\uC544"
+    - "\uCE74\uB098\uB9AC\uC544"
+    - "\uCE74\uB098\uB9AC\uC544"
+    - "\uCE74\uB098\uB9AC\uC544"
     - 
     - 
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
+    - "\uCE74\uB098\uB9AC\uC544"
+    - "\uCE74\uB098\uB9AC\uC544"
     - 
+    - "\uCE74\uB098\uB9AC\uC544"
+    - "\uCE74\uB098\uB9AC\uC544"
     - 
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
-    - 
+    - "\uCE74\uB098\uB9AC\uC544"
     - 
     - 
     - 
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
     - 
     - 
-    - "<color=red>\uC2DC\uC2A4\uD15C</color>"
     sentences:
-    - "\uB365\uC2A4\uAC00 \uC758\uB8B0\uD55C \uBB3C\uAC74\uC744 \uBC1B\uC73C\uB7EC
-      \uAC00\uAC8C\uC5D0 \uB2E4\uC2DC \uB4E4\uB800\uB2E4."
-    - "\uADF8\uAC00 \uBB38\uC744 \uC5F4\uACE0 \uB4E4\uC5B4\uC624\uC790 \uADF8\uB9CC\uC758
-      \uD2B9\uC720\uC758 \uC704\uC555\uAC10\uC774 \uC0C1\uC810\uC744 \uAC00\uB4DD
-      \uCC44\uC6E0\uB2E4."
-    - "\uC800\uBC88\uC5D0 \uC758\uB8B0\uD55C \uBB3C\uAC74\uC740 \uBAA8\uB450 \uC900\uBE44\uB410\uB294\uAC00?"
-    - "\uB2F9\uC2E0\uC740 \uACE0\uAC1C\uB97C \uB044\uB355\uC774\uBA70 \uAE0D\uC815\uC744
-      \uD45C\uD558\uACE4 \uADF8\uC5D0\uAC8C \uBB3C\uAC74\uC744 \uAC74\uB0C8\uB2E4."
-    - "- \uB365\uC2A4\uC5D0\uAC8C \uD669\uAE08 \uB125\uD06C\uB9AC\uC2A4 x1, \uC81C\uB828\uB41C
-      \uAE08x3,  \uC624\uB2C9\uC2A4 \uBC18\uC9C0x1 \uC744(\uB97C) \uAC74\uB137\uC2B5\uB2C8\uB2E4."
-    - "\uACE0\uB9D9\uB124 \uC815\uB9D0 \uC544\uB984\uB2F5\uAD70."
-    - "\uC774\uAC83\uC774 \uC624\uB2C9\uC2A4\uBC18\uC9C0\uC778\uAC00.(\uAC10\uD0C4)"
-    - "\uAE30\uB300 \uC774\uC0C1\uC73C\uB85C \uB354\uC6B1 \uB9E4\uB825\uC801\uC778
-      \uB140\uC11D\uC774\uC57C."
-    - "\uC138\uB828\uB418\uACE0 \uB2E8\uC815\uD55C \uB9C8\uB2F4\uC758 \uBD84\uC704\uAE30\uB97C
-      \uD48D\uAE30\uB294 \uB3D9\uC2DC\uC5D0 \uACE0\uAE09\uC2A4\uB7EC\uC6B4 \uC6D0\uC219\uBBF8\uAE4C\uC9C0
-      \uB290\uAEF4\uC9C0\uB294\uAD70."
-    - "\uB9C8\uCE58... \uB098\uB97C \uC751\uC2DC\uD558\uB294 \uAC83 \uAC19\uC544."
-    - "\uB365\uC2A4\uB294 \uAE30\uD488 \uC788\uACE0 \uC12C\uC138\uD55C \uBB18\uC0AC\uB97C
-      \uBC49\uC5B4\uB0B4\uBA70 \uD568\uAED8 \uC870\uC2EC\uC2A4\uB7EC\uC6B4 \uC190\uAE38\uB85C
-      \uC7A5\uC2E0\uAD6C\uB97C \uC5B4\uB8E8\uB9CC\uC84C\uB2E4."
-    - "\uADF8\uC758 \uD589\uB3D9 \uD558\uB098\uD558\uB098\uC5D0\uC11C \uC544\uB984\uB2E4\uC6B4
-      \uC608\uC220\uD488\uC744 \uC0AC\uB791\uD558\uB294 \uBA74\uBAA8\uAC00 \uB3CB\uBCF4\uC600\uB2E4."
-    - "\uC5EC\uAE30 \uC62C \uB54C\uB294 \uC5B8\uC81C\uB098 \uC88B\uC740 \uBB3C\uAC74\uC744
-      \uAC00\uC838\uAC00\uB294\uAD70."
-    - "\uC5EC\uAE30 \uC57D\uC18D\uD55C \uBCF4\uC218\uC77C\uC138."
-    - "- 000 \uB2E4\uC778\uC744 \uC5BB\uC5C8\uC2B5\uB2C8\uB2E4. -"
-    - "\uADF8\uB294 \uD3C9\uC18C \uD45C\uC815 \uBCC0\uD654\uAC00 \uC801\uC740 \uC790\uC774\uC9C0\uB9CC,
-      \uC9C0\uAE08\uC740 \uD655\uC2E4\uD788 \uAE30\uBED0 \uBCF4\uC600\uB2E4."
-    - "\uBCF4\uC218\uB97C \uAC74\uB124\uACE0\uB3C4 \uC7A5\uC2E0\uAD6C\uC758 \uC544\uB984\uB2E4\uC6C0\uC5D0\uC11C
-      \uD5E4\uC5B4 \uB098\uC624\uC9C0 \uBABB\uD588\uB294\uC9C0, \uADF8\uC758 \uB208\uC740
-      \uC5EC\uC804\uD788 \uAC10\uC0C1\uC5D0 \uC816\uC5B4 \uC788\uC5C8\uB2E4."
-    - "\uADF8\uB9AC\uACE4 \uC774\uB0B4 \uADF8\uC73D\uD55C \uD45C\uC815\uC73C\uB85C
-      \uACE0\uAC1C\uB97C \uB4E4\uACE4 \uB2F9\uC2E0\uC744 \uBC14\uB77C\uBD24\uB2E4."
-    - "\uACE0\uB9D9\uB124. \uB09C \uC774\uB9CC \uC774\uB4E4\uACFC \uD568\uAED8\uD560
-      \uC2DC\uAC04\uC744 \uAC00\uC9C0\uB7EC \uAC00\uBCF4\uACA0\uB124."
-    - "\uADF8\uB7FC."
-    - "\uAC00\uBCCD\uAC8C \uCF54\uB97C \uB044\uB355\uC5EC \uC778\uC0AC\uB97C \uD55C
-      \uB4A4, \uADF8\uB294 \uC18C\uC911\uD558\uB2E4\uB294 \uB4EF\uC774 \uC7A5\uC2E0\uAD6C\uB97C
-      \uB4E4\uACE0 \uAC00\uAC8C\uB97C \uB098\uC130\uB2E4."
-    - "- \uB538\uB791\uB538\uB791 -"
-    - "\uB365\uC2A4\uAC00 \uC77C\uBC18 \uC190\uB2D8\uC73C\uB85C \uB4F1\uC7A5\uD569\uB2C8\uB2E4."
+    - "- \uB538\uB791\uB538\uB791 -\r\n"
+    - "\uAC70\uCE60\uAC8C \uBB38\uC744 \uC5F4\uC5B4\uC816\uD788\uBA70 \uCE74\uB098\uB9AC\uC544\uAC00
+      \uB2E4\uC2DC \uB3CC\uC544\uC654\uB2E4.\r\n"
+    - "\uADF8\uB294 \uC5ED\uC2DC\uB098 \uB2E4\uC9DC\uACE0\uC9DC \uC8FC\uC778\uACF5\uC5D0\uAC8C
+      \uB2E4\uAC00\uC640 \uC5BC\uAD74\uC744 \uB4E4\uC774\uBC00\uBA70 \uB9D0\uC744
+      \uAC78\uC5C8\uB2E4.\r\n"
+    - "\uD3ED\uD0C4\uC740 \uC900\uBE44\uB410\uC5B4?\r\n"
+    - "\uC774 \uCE74\uB098\uB9AC\uC544\uB2D8\uC774 \uBAB8\uC774 \uADFC\uC9C8\uAC70\uB824\uC11C
+      \uB3C4\uC800\uD788 \uCC38\uC744 \uC218\uAC00 \uC5C6\uB2E8 \uB9D0\uC774\uC9C0.\r\n"
+    - "\uBE68\uB9AC \uD130\uB728\uB9AC\uACE0 \uC2F6\uC5B4\uC11C \uC548\uB2EC\uC774
+      \uB0AC\uB2E4\uB294 \uB9D0\uC500\uC774\uC57C!\r\n"
+    - "\uD3ED\uD0C4! \uBE68\uB9AC \uD3ED\uD0C4\uC744 \uB2EC\uB780 \uB9D0\uC774\uB2E4!\r\n"
+    - "\uB2F9\uC2E0\uC740 \uBBF8\uB9AC \uC900\uBE44\uD55C \uD07C\uC9C1\uD55C \uD3ED\uC8FD\uC744
+      \uADF8\uC5D0\uAC8C \uAEBC\uB0B4 \uC8FC\uC5C8\uB2E4.\r\n"
+    - "- \uCE74\uB098\uB9AC\uC544\uC5D0\uAC8C \uC7A5\uB09C\uAC10 \uD3ED\uD0C4\xD73,
+      \uD3ED\uC8FD\xD73, \uAC80\uC740 \uBCF5\uBA74\xD72\uC744 \uAC74\uB138\uC2B5\uB2C8\uB2E4.
+      -\r\n"
+    - "\uC624\uD638 \uAF64 \uBB35\uC9C1\uD55C\uB370?\r\n"
+    - "\uC5B4\uB290 \uC815\uB3C4\uC758 \uD30C\uAD34\uB825\uC744 \uC9C0\uB2CC \uB140\uC11D\uC774\uC9C0?\r\n"
+    - "\uB2F9\uC2E0\uC740 \uADF8\uAC83\uC774 \uC288\uD14C\uB978 \uC655\uC131 \uC815\uB3C4\uB294
+      \uD55C \uBC29\uC5D0 \uB0A0\uB824\uBC84\uB9B4 \uC704\uB825\uC774\uB77C\uACE0
+      \uC124\uBA85\uD574\uC92C\uB2E4.\r\n"
+    - "\uD6C4\uD6C4\uD6C4. \uC88B\uC544 \uC88B\uC544. \uC544\uC8FC \uC88B\uC544~!\r\n"
+    - "\uC5EC\uAE30 \uBB3C\uAC74\uAC12\uC774\uC57C.\r\n"
+    - "- 100\uB2E4\uC778\uC744 \uC5BB\uC5C8\uC2B5\uB2C8\uB2E4. -\r\n"
+    - "\uC624\uB298 \uBC24\uC740 \uC544\uC8FC \uBA4B\uC9C4 \uBC24\uC774\uACA0\uC5B4.
+      \uC774 \uCE74\uB098\uB9AC\uC544\uB2D8\uC774 \uB300\uB959\uC758 \uC5ED\uC0AC\uB97C
+      \uC0C8\uB85C \uC4F0\uB294 \uB0A0\uC774 \uB420 \uAC83\uC774\uC57C!\r\n"
+    - "- \uB538\uB791\uB538\uB791 -\r\n"
+    - "\uB0D0\uC544\uD558\uD558\uD558\uD558\uD558!"
+    - "\uADF8\uC758 \uC6C3\uC74C\uC18C\uB9AC\uAC00 \uC870\uC6A9\uD55C \uB9C8\uC744\uC5D0
+      \uBA54\uC544\uB9AC\uCE58\uB4EF\uC774 \uC6B8\uB824 \uD37C\uC84C\uB2E4.\r\n"
+    - "\uB2F9\uC2E0\uC740 \uC624\uB298 \uBC24 \uC655\uC131\uC5D0\uC11C \uD3ED\uC8FD\uB180\uC774\uB97C
+      \uD558\uB2E4\uAC00 \uC138\uB9AC\uC544\uC5D0\uAC8C \uBD99\uC7A1\uD600\uAC08 \uCE74\uB098\uB9AC\uC544\uC758
+      \uBAA8\uC2B5\uC744 \uC0C1\uC0C1\uD558\uBA70 \uB9CC\uC871\uC2A4\uB7EC\uC6B4 \uC6C3\uC74C\uC744
+      \uC9C0\uC5C8\uB2E4.\r\n"
+    - "\uCE74\uB098\uB9AC\uC544\uAC00 \uC77C\uBC18 \uC190\uB2D8\uC73C\uB85C \uB4F1\uC7A5\uD569\uB2C8\uB2E4.\r\n"
 --- !u!114 &1971287103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63183,32 +63383,77 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   QuestDig: 3
-  QuestIndex: 999
+  QuestIndex: 3
   MQ: {fileID: 9769516}
   dia:
     sprites:
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
     name:
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
+    - 
+    - "\uCE74\uB098\uB9AC\uC544"
+    - "\uCE74\uB098\uB9AC\uC544"
+    - 
+    - "\uCE74\uB098\uB9AC\uC544"
+    - 
+    - 
+    - "\uCE74\uB098\uB9AC\uC544"
+    - 
+    - "\uCE74\uB098\uB9AC\uC544"
+    - 
+    - "\uCE74\uB098\uB9AC\uC544"
+    - 
+    - "\uCE74\uB098\uB9AC\uC544"
     - 
     - "<color=red>\uC2DC\uC2A4\uD15C</color>"
     sentences:
-    - "\uC5ED\uC2DC \uC790\uB124\uB77C\uACE0 \uD574\uB3C4 \uC774 \uB140\uC11D\uB4E4\uC744
-      \uAD6C\uD574\uC8FC\uAE34 \uD798\uB4E0\uAC00 \uBCF4\uAD70."
-    - "\uAD1C\uCC2E\uB124, \uCD95\uC81C\uB85C \uC778\uD574 \uB9CE\uC774 \uBC14\uC060
-      \uD130"
-    - "\uCD95\uC81C \uC774\uD6C4\uC5D0 \uB2E4\uB978 \uBB3C\uAC74\uC774 \uC0DD\uAC01\uB098\uBA74
-      \uC758\uB8B0\uD558\uB7EC \uB610 \uC624\uACA0\uB124."
-    - "\uADF8\uB294 \uC18D\uB0B4\uB97C \uC54C \uC218 \uC5C6\uB294 \uB290\uAE0B\uD55C
-      \uD45C\uC815\uC73C\uB85C \uB2F9\uC2E0\uC744 \uBC14\uB77C\uBCF4\uB2E4\uAC00,
-      \uC870\uC6A9\uD788 \uBB38\uC73C\uB85C \uAC78\uC74C\uC744 \uC62E\uACBC\uB2E4."
-    - "\uB365\uC2A4\uAC00 \uC77C\uBC18 \uC190\uB2D8\uC73C\uB85C \uB4F1\uC7A5\uD569\uB2C8\uB2E4."
+    - "\uB2F9\uC2E0\uC740 \uC774 \uAC00\uAC8C\uC5D0\uC11C \uADF8\uB7F0 \uC704\uD5D8\uD55C
+      \uBB3C\uAC74\uC740 \uCDE8\uAE09\uD558\uC9C0 \uC54A\uB294\uB2E4\uACE0 \uB9D0\uD588\uB2E4.\r\n"
+    - "\uBB50!?\r\n"
+    - "\uD3ED\uD0C4\uB3C4 \uC5C6\uB294 \uACF3\uC774 \uAC00\uAC8C\uC57C?\r\n"
+    - "\uCE74\uB098\uB9AC\uC544\uB294 \uC778\uC0C1\uC744 \uD55C\uAECF \uCC21\uADF8\uB9AC\uBA70
+      \uC5BC\uAD74\uC744 \uB4E4\uC774\uBC00\uC5C8\uB2E4.\r\n"
+    - "\uC5C6\uB2E4\uACE0 \uB9D0\uD558\uBA74 \uB05D\uC774\uC57C? \uC5C6\uC73C\uBA74
+      \uC774\uC81C\uBD80\uD130\uB77C\uB3C4 \uB9CC\uB4E4\uC5B4\uC11C \uB0B4 \uC55E\uC5D0
+      \uB300\uB839\uD574\uC57C\uC9C0. \uC548 \uADF8\uB798? \uC559!?\r\n"
+    - "\uB2F9\uC2E0\uC740 \uB9D0\uC5C6\uC774 \uADF8\uB97C \uAC00\uAC8C \uBC16\uC73C\uB85C
+      \uB4E4\uACE0 \uB098\uAC14\uB2E4. \uCE74\uB098\uB9AC\uC544\uC758 \uCCB4\uAD6C\uAC00
+      \uC791\uC544\uC11C \uADF8\uB7F0\uC9C0 \uC27D\uAC8C \uB4E4\uC5B4\uC11C \uC62E\uAE38
+      \uC218 \uC788\uC5C8\uB2E4.\r\n"
+    - "- \uB538\uB791\uB538\uB791 -"
+    - "\uC57C! \uC9C0\uAE08 \uBA38 \uD558\uB294 \uAC70\uC57C! \uAC10\uD788 \uCE74\uB098\uB9AC\uC544\uB2D8\uC758
+      \uC625\uCCB4\uC5D0 \uC190\uC744 \uB300\uB2E4\uB2C8, \uB108 \uC8FD\uACE0 \uC2F6\uB0D0!?\r\n"
+    - "\uB2F9\uC2E0\uC740 \uC870\uC6A9\uD788 \uC18C\uAE08 \uD55C \uBC14\uAC00\uC9C0\uB97C
+      \uB4E4\uACE0 \uC640\uC11C \uAC00\uAC8C \uC55E\uC5D0 \uBFCC\uB9B0 \uB4A4, \uACBD\uBE44\uBCD1\uC744
+      \uD638\uCD9C\uD588\uB2E4.\r\n"
+    - "\uD558\uC544? \uB0B4\uAC00 \uADF8\uAE5F \uB9C8\uC744 \uACBD\uBE44\uBCD1\uC5D0\uAC8C
+      \uC21C\uC21C\uD788 \uBD99\uC7A1\uD600\uAC08 \uC0DD\uAC01\uD558\uB294 \uAC70\uC57C?
+      \uB0B4\uAC00 \uB204\uAD70\uC9C0 \uC54C\uC544 \uB108?\r\n"
+    - "\uADF8\uB7EC\uB098 \uADF8\uB294 \uB108\uBB34\uB098 \uC27D\uAC8C, \uACBD\uBE44\uBCD1\uC758
+      \uC190\uC5D0 \uB04C\uB824\uAC14\uB2E4.\r\n"
+    - "\uC544\uC544\uC545! \uC774\uAC70 \uB194! \uC774\uAC83\uB4E4\uC774 \uB2E8\uCCB4\uB85C
+      \uBBF8\uCCE4\uAD6C\uB098!\r\n"
+    - "\uB2F9\uC2E0\uC740 \uD568\uC228\uC744 \uC26C\uBA70 \uADF8 \uBAA8\uC2B5\uC744
+      \uBC14\uB77C\uBCF4\uC558\uB2E4.\r\n"
+    - "\uB0B4 \uBC18\uB4DC\uC2DC \uB2E4\uC2DC \uB3CC\uC544\uC628\uB2E4! \uC774 \uCE58\uC695\uC740
+      \uC78A\uC9C0 \uC54A\uC744 \uAC83\uC774\uB77C\uACE0\uC624\uC624!\r\n"
+    - "\uC870\uC6A9\uD55C \uB9C8\uC744\uC5D0 \uCE74\uB098\uB9AC\uC544\uC758 \uC678\uCE68\uC774
+      \uBA54\uC544\uB9AC\uCC98\uB7FC \uD37C\uC838\uAC14\uB2E4.\r\n"
+    - "\uCE74\uB098\uB9AC\uC544\uAC00 \uC77C\uBC18 \uC190\uB2D8\uC73C\uB85C \uB4F1\uC7A5\uD569\uB2C8\uB2E4.\r\n"
 --- !u!114 &1971287104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63222,32 +63467,56 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   QuestDig: 2
-  QuestIndex: 999
+  QuestIndex: 3
   MQ: {fileID: 9769516}
   dia:
     sprites:
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
-    - {fileID: 21300000, guid: 0f306fc5ca970604d85333483c8e0814, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
+    - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
+    - {fileID: 21300000, guid: e5b6ae0504768ae47b109d3efe9ab355, type: 3}
     - {fileID: 21300000, guid: 9ccfb0b9695ed534586443c456d49907, type: 3}
     name:
-    - "\uB365\uC2A4"
-    - "\uB365\uC2A4"
     - 
-    - "\uB365\uC2A4"
+    - "\uCE74\uB098\uB9AC\uC544"
     - 
+    - "\uCE74\uB098\uB9AC\uC544"
+    - "\uCE74\uB098\uB9AC\uC544"
+    - 
+    - "\uCE74\uB098\uB9AC\uC544"
+    - 
+    - "\uCE74\uB098\uB9AC\uC544"
     - 
     sentences:
-    - "\uC774\uBC88\uC5D0\uB3C4 \uC798 \uBD80\uD0C1\uD558\uC9C0."
-    - "\uC774\uAC74 \uCC29\uC218\uAE08\uC774\uB124."
-    - "- 000\uB2E4\uC778\uC744 \uC5BB\uC5C8\uC2B5\uB2C8\uB2E4.-"
-    - "\uC88B\uC740 \uBB3C\uAC74\uC744 \uAE30\uB300\uD558\uACE0 \uC788\uACA0\uB124."
-    - "\uADF8\uB294 \uC5EC\uC804\uD788 \uB290\uAE0B\uD55C \uBBF8\uC18C\uB85C \uB2F9\uC2E0\uC744
-      \uBC14\uB77C\uBCF4\uB2E4\uAC00, \uC870\uC6A9\uD788 \uBB38\uC73C\uB85C \uAC78\uC74C\uC744
-      \uC62E\uACBC\uB2E4."
+    - "\uB2F9\uC2E0\uC740 \uB300\uCDA9 \uD3ED\uC8FD \uAC19\uC740 \uAC83\uC774\uB77C\uB3C4
+      \uC190\uC5D0 \uC950\uC5B4 \uBE68\uB9AC \uB0B4\uBCF4\uB0B4\uC57C\uACA0\uB2E4\uB294
+      \uC0DD\uAC01\uC5D0, \uD3ED\uD0C4\uC744 \uB9CC\uB4E4\uC5B4\uC8FC\uACA0\uB2E4\uACE0
+      \uB9D0\uD588\uB2E4.\r\n"
+    - "\uD6C4\uD6D7, \uC5ED\uC2DC \uC774 \uCE74\uB098\uB9AC\uC544\uB2D8\uC758 \uC6D0\uB300\uD55C
+      \uACC4\uD68D\uC5D0 \uB108\uB3C4 \uD568\uAED8\uD558\uB824\uB294 \uAC83\uC774\uAD6C\uB098!\r\n"
+    - "\uB2F9\uC2E0\uC740 \uACE0\uAC1C\uB97C \uAC00\uB85C\uC813\uACE0 \uC788\uC5C8\uC9C0\uB9CC,
+      \uCE74\uB098\uB9AC\uC544\uB294 \uBCF4\uC9C0\uB3C4 \uC54A\uC740 \uCC44 \uC18C\uACE4\uAC70\uB9AC\uB4EF\uC774
+      \uB9D0\uC744 \uC774\uC5B4\uAC14\uB2E4.\r\n"
+    - "\uB0B4\uAC00 \uC288\uD14C\uB978 \uC655\uC131\uC744 \uBEE5~ \uD558\uB2C8 \uB0A0\uB824\uBC84\uB9B4
+      \uACC4\uD68D\uC774\uAC70\uB4E0.\r\n"
+    - "\uC5B4\uB54C \uC0DD\uAC01\uB9CC \uD574\uB3C4 \uC9DC\uB9BF\uD558\uC9C0 \uC54A\uC544?
+      \uB0D0\uC544\uD558\uD558\uD558.\r\n"
+    - "\uADD3\uAC00\uC5D0 \uC870\uC6A9\uD788 \uB9D0\uD558\uB2E4\uAC00, \uAC11\uC790\uAE30
+      \uBBF8\uCE5C \uB4EF\uC774 \uBC15\uC7A5\uB300\uC18C\uB97C \uD558\uB294 \uD1B5\uC5D0
+      \uB2F9\uC2E0\uC740 \uC815\uC2E0\uC744 \uCC28\uB9B4 \uC218\uAC00 \uC5C6\uC5C8\uB2E4.\r\n"
+    - "\uC798 \uB9CC\uB4E4\uACE0 \uC788\uC5B4~, \uB098\uB294 \uC124\uCE58\uC7A5\uC18C\uB97C
+      \uBB3C\uC0C9\uD558\uACE0 \uC62C \uD14C\uB2C8\uAE4C.\r\n"
     - "- \uB538\uB791\uB538\uB791 -"
+    - "\uD3ED\uD0C4~ \uD3ED\uD0C4~.\r\n"
+    - "\uB2F9\uC2E0\uC740 \uB5A0\uB098\uB294 \uCE74\uB098\uB9AC\uC544\uB97C \uBCF4\uBA70
+      \uC548\uB3C4\uC758 \uD55C\uC228\uC744 \uB0B4\uC26C\uC5C8\uC9C0\uB9CC, \uB3D9\uC2DC\uC5D0
+      \uADF8\uB7F4\uB4EF\uD55C \uC7A5\uB09C\uAC10 \uD3ED\uD0C4\uC744 \uC5B4\uB5BB\uAC8C
+      \uB9CC\uB4E4 \uAC83\uC778\uC9C0 \uACE0\uBBFC\uC5D0 \uBE60\uC84C\uB2E4.\r\n"
 --- !u!114 &1971287105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63260,8 +63529,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7df4657dc52a1394ea922f65255fed04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AQindex: 999
-  QuestItem: {fileID: 1834638473}
+  AQindex: 3
+  QuestItem: {fileID: 342422227}
   AcceptQDT: {fileID: 1971287104}
   refuseQDT: {fileID: 1971287103}
   CompleteQDT: {fileID: 1971287102}
@@ -65881,6 +66150,188 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068122113}
   m_CullTransparentMesh: 0
+--- !u!1001 &2073774346
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1138050587}
+    m_Modifications:
+    - target: {fileID: 8560641086211308693, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_Name
+      value: Quest3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -220.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308703, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: RightQuestPan
+      value: 
+      objectReference: {fileID: 1331083408}
+    - target: {fileID: 8560641086211308703, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: QuestName
+      value: 
+      objectReference: {fileID: 1421621628}
+    - target: {fileID: 8560641086211308703, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: QuestHuman
+      value: 
+      objectReference: {fileID: 656022179}
+    - target: {fileID: 8560641086211308703, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: QuestDesc
+      value: 
+      objectReference: {fileID: 1903590748}
+    - target: {fileID: 8560641086211308703, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: YON
+      value: 
+      objectReference: {fileID: 249992135}
+    - target: {fileID: 8560641086211308691, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: QuestData.result
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308691, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: QuestData.Index
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308691, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: QuestData.name
+      value: "\uB610\uB77C\uC774"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308691, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: QuestData.human
+      value: "\uCE74\uB098\uB9AC\uC544"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641086211308691, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: QuestData.desc
+      value: "\uB610\uB77C\uC774 \uCE74\uB098\uB9AC\uC544\uC5D0\uAC8C \uC628 \uC758\uB8B0\n[\uC7A5\uB09C\uAC10
+        \uD3ED\uD0C4]x3, [\uD3ED\uD0C4]x3 ,[\uAC80\uC740 \uBCF5\uBA74]x2\uB97C \n\uAD6C\uD574\uB2E4
+        \uC8FC\uC790."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8560641085658919615, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+        type: 3}
+      propertyPath: m_Text
+      value: "\uB610\uB77C\uC774"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9cadbc10150948547b0a5e5b058c7b2a, type: 3}
+--- !u!224 &2073774347 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8560641086211308692, guid: 9cadbc10150948547b0a5e5b058c7b2a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2073774346}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2075319059
 GameObject:
   m_ObjectHideFlags: 0
