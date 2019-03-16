@@ -19,11 +19,11 @@ public class MgrQuest : MonoBehaviour
     int QI;
 
     // PlayerPrefs => QuestX
+    // -1. 가능
     // 0. 미수락
     // 1. 수락
     // 2. 거절
     // 3. 완료
-
 
     void Awake()
     {

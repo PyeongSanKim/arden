@@ -14,7 +14,8 @@ public class YesOrNo : MonoBehaviour
     public Inventory inv;
     public GameObject SlotContents;
     int Gold;
-
+    public GameObject[] NPC;
+    public NPC_Quest NQ;
 
     public void clearCheck()
     {
@@ -46,15 +47,15 @@ public class YesOrNo : MonoBehaviour
             enoughIndex = 3;
             for (int i = 0; i < SC.Length; i++)
             {
-                if (SC[i].ItemID == 25 && SC[i].ItemCount >= 1)
+                if (SC[i].ItemID == 2 && SC[i].ItemCount >= 1)
                 {
                     isItem[0] = true;
                 }
-                if (SC[i].ItemID == 155 && SC[i].ItemCount >= 3)
+                if (SC[i].ItemID == 28 && SC[i].ItemCount >= 3)
                 {
                     isItem[1] = true;
                 }
-                if (SC[i].ItemID == 126 && SC[i].ItemCount >= 1)
+                if (SC[i].ItemID == 59 && SC[i].ItemCount >= 1)
                 {
                     isItem[2] = true;
                 }
@@ -84,21 +85,34 @@ public class YesOrNo : MonoBehaviour
         ////////// 여기 부분을 수정 /////////////
         if (QuestIndex.Equals(0))
         {
-            inv.decreseItem(163); 
+            inv.decreseItem(163);
+            PlayerPrefs.SetInt("Quest1", -1);
         }
+
         if (QuestIndex.Equals(1))
         {
-            inv.decreseItem(25);
-            inv.decreseItem(155);
-            inv.decreseItem(155);
-            inv.decreseItem(155);
-            inv.decreseItem(126);
+            inv.decreseItem(2);
+            inv.decreseItem(28);
+            inv.decreseItem(59);
             Gold = PlayerPrefs.GetInt("Gold");
-            Gold += 100;
+            Gold += 400;
             PlayerPrefs.SetInt("Gold", Gold);
+            //PlayerPrefs.SetInt("QuestX",-1);
         }
-        ///////////////////////////////////////////
 
+        //덥스용
+        //if (QuestIndex.Equals(1))
+        //{
+        //    inv.decreseItem(25);
+        //    inv.decreseItem(155);
+        //    inv.decreseItem(155);
+        //    inv.decreseItem(155);
+        //    inv.decreseItem(126);
+        //    Gold = PlayerPrefs.GetInt("Gold");
+        //    Gold += 100;
+        //    PlayerPrefs.SetInt("Gold", Gold);
+        //}
+        ///////////////////////////////////////////
         noBtn(6);
     }
     // -1. 수락가능
@@ -118,5 +132,11 @@ public class YesOrNo : MonoBehaviour
         QuestName.text = "";
         QuestHuman.text = "";
         QuestDesc.text = "";
+        NQ.NPCCheck();
+
+        if (QuestIndex.Equals(1))
+        {
+            PlayerPrefs.SetInt("Quest2",-1);
+        }
     }
 }
